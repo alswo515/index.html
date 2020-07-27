@@ -1,0 +1,62 @@
+* { margin:0; padding:0; 
+    outline: none;
+    box-sizing:border-box; }
+a { color:inherit; 
+    text-decoration:none }    
+ul { list-style:none }    
+table { border-collapse:collapse;
+    width:100%; table-layout:fixed; }
+img { max-width:100%; 
+    vertical-align:middle;
+    /* 모든인라인테그에 베이스라인을 기준을 두고 정렬한다 */
+    border:none }    
+.cf:after, .cf:before 
+    { content:''; display:block; 
+    clear:both}    
+h1, h2, h3, h4, h5, h6 {
+    font-size:100%; 
+    font-weight:normal; } 
+strong, th { font-weight:normal }    
+address, em { font-style:normal }
+.blind { font-size:0px; 
+    position:absolute;
+    width:0; height:0; 
+    overflow:hidden;
+    text-indent:-9999px;
+    line-height:0; }
+header , footer , section , article , aside , nav , main, figure{
+    display: block;
+ }
+
+
+ .skip a {
+     display: block;
+     background: #000;
+     color: #fff;
+     text-align: center;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     position: absolute;
+     top: -100px;
+ }
+ .skip a:focus {
+     /* focus는 tab키를 눌러야지 반응을한다 */
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    /* position: static; */
+    /* 포지션속성을 취소한다 */
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+ }
+
+
+ fieldset{
+     border:none
+ }
+ legend{
+     display:none
+ }
+
