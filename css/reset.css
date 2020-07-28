@@ -3,10 +3,13 @@
     box-sizing:border-box; }
 a { color:inherit; 
     text-decoration:none }    
-ul { list-style:none }    
+ul , ol { list-style:none }    
 table { border-collapse:collapse;
     width:100%; table-layout:fixed; }
-img { max-width:100%; 
+    /* white-space:nowrap을 쓰면 자동 줄바꿈이 되지 않고 칸 밖으로 오버플로우가 발생하는데 이떄 표구조가 유지되도록 하기 위해 fixed시킴 */
+img {  
+    border: none;
+    /* 이미지 넓이값은 필요한 곳에서 width:100% 설정할 것 */
     vertical-align:middle;
     /* 모든인라인테그에 베이스라인을 기준을 두고 정렬한다 */
     border:none }    
@@ -15,7 +18,7 @@ img { max-width:100%;
     clear:both}    
 h1, h2, h3, h4, h5, h6 {
     font-size:100%; 
-    font-weight:normal; } 
+    font-size: 100%; } 
 strong, th { font-weight:normal }    
 address, em { font-style:normal }
 .blind { font-size:0px; 
@@ -56,7 +59,37 @@ header , footer , section , article , aside , nav , main, figure{
  fieldset{
      border:none
  }
- legend{
+ legend, caption{
      display:none
  }
 
+ button, input{
+     border: none;
+ }
+button[type=submit],
+input[type=submit]{
+    cursor: pointer;
+}
+
+button[type=button],
+input[button]{
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, pre, textarea{
+    font-size: 100%;
+}
+
+em, address{
+    font-style: normal;
+}
+
+strong, th{
+    font-weight: normal;
+}
+
+.elliosis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellisis;
+}
