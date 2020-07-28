@@ -8,10 +8,6 @@
     margin: 0 auto;
 }
 
-.footer_row{
-    max-width: 1665px;
-    margin: 0 auto;
-}
 
 
 #header{
@@ -177,7 +173,7 @@
 #header .nav .sns > li:nth-child(4):hover > a{
     color: red;
 }
-
+/* ----------여기까지 헤더------------------ */
 
 
 
@@ -193,4 +189,139 @@
 
 
 
-#footer
+#footer{
+    margin: 0 auto;
+    padding: 62.6666px 46.6667px 0;
+    color: #7c7c7c;
+    background-color: #e9f1f2;
+}
+
+
+#footer h3{
+    font-size: 24px;
+    font-family: "playfair display";
+}
+
+
+#footer p,
+#footer li > a{
+    font-size: 16px;
+}
+
+#footer .help{
+    float: left;
+    padding: 0 64px 64px;
+    width: 33.3333333%;
+}
+
+#footer .help h3{
+    position: relative;
+    padding-bottom: 18px;
+}
+
+#footer .help p{
+    padding-top: 36px;
+}
+
+
+#footer .help h3:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 50px;
+    height: 1px;
+    background-color: #7c7c7c;
+}
+
+
+#footer .link{
+    float: left;
+    padding: 0 64px 64px;
+    width: 33.3333333%;
+}
+
+
+#footer .link h3{
+    position: relative;
+    padding-bottom: 18px;
+}
+
+#footer .link ul{
+    padding-top: 36px;
+}
+
+#footer .link li>a{
+    display: inline-block;
+    padding: 8px 0;
+}
+
+
+
+#footer .link h3:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 50px;
+    height: 1px;
+    background-color: #7c7c7c;
+}
+
+#footer .site_search{
+    float: right;
+    padding: 0 64px 64px;
+    width: 33.3333333%;
+}
+
+
+#footer .site_search h3{
+    position: relative;
+    padding-bottom: 18px;
+}
+
+#footer .site_search form{
+    padding-top: 36px;
+}
+
+#footer .site_search fieldset{
+}
+
+#footer .site_search input{
+    height: 40px;
+    width: 70%;
+    float: left;
+}
+
+#footer .site_search button{
+    background: #dce7e9;
+    height: 40px;
+    width: 30%;
+    float: left;
+
+}
+
+
+#footer .site_search h3:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 50px;
+    height: 1px;
+    background-color: #7c7c7c;
+}
+
+
+
+ .blog_go{
+    text-align: center;
+    padding: 36px;
+    background: #dce7e9;
+    width: 100%;
+}
+
+ .blog_go a{
+    display: inline-block;
+    color: #7c7c7c;
+}
