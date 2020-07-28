@@ -88,9 +88,6 @@
 }
 
 
-#header .depth2 > li:nth-child(1) a{
-    /* border: 1px solid #ccc; */
-}
 
 
 #header .depth2 > li a{
@@ -109,9 +106,6 @@
     opacity: 1;
 }
 
-#header .depth2 > li:nth-child(2) a{
-    /* border-top: none; */
-}
 
 #header .depth2 > li:hover a{
     /* border: 1px solid #ccc; */
@@ -271,8 +265,6 @@
     padding-top: 36px;
 }
 
-#footer .site_search fieldset{
-}
 
 #footer .site_search input{
     height: 40px;
