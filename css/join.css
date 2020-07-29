@@ -3,6 +3,133 @@
 @import "reset (1).css";
 
 
-#section{
-    
+#section .join > h3{
+    margin: 10px 0 50px;
+    font-size: 20.8px;
+    position: relative;
+    padding-bottom: 5px;
+    color: #7c7c7c;
 }
+
+#section .join > h3:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+#section table{
+    border: 1px solid #ddd;
+}
+
+#section table input{
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    width: 15%;
+}
+
+#section table td:first-child{
+    background-color: #fbfafa;
+    color: #000;
+}
+
+#section table tr td{
+    padding: 11px 0 10px 18px;
+}
+
+#section table tr td:first-child{
+    width: 20%;
+}
+
+#section table label{
+    color: #7c7c7c;
+}
+
+#section table td:first-child label:after{
+    content: " *";
+    color:red;
+}
+
+#section table tr:nth-child(5) td:nth-child(2) select,
+#section table tr:nth-child(5) td:nth-child(2) input{
+    width: 7%;
+}
+
+#section .join{
+    padding-bottom: 60px;
+}
+
+#section .accept > h3{
+    color: 20.8px;
+    color: #7c7c7c;
+    padding-bottom: 10px;
+}
+
+#section .accept > div{
+    padding: 20px;
+    background-color: #fbfafa;
+    border: 1px #ccc solid;
+}
+
+#section .accept > div form > h4{
+    margin-bottom: 20px;
+    color: #7c7c7c;
+}
+
+#section .accept > div:nth-child(2) input {
+    /* width: 100%; */
+}
+
+#section .accept > div:nth-child(2) p{
+    font-size: 18.2px;
+    color: #353535;
+    font-weight: bold;
+}
+#section .accept > div textarea{
+    width: 100%;
+    border: none;
+    resize: none;
+    color: #7c7c7c;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#section .accept > div:nth-child(3){
+    border-top: none;
+}
+
+#section .accept > div:nth-child(4){
+    border-top: none;
+}
+#section .accept > div:nth-child(5){
+    border-top: none;
+}
+
+#section .join_com{
+    padding: 30px 0;
+    text-align: center;
+}
+
+#section .join_com button{
+    background-color: #222;
+    padding: 10px 8px;
+    font-size: 12px;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+}
+
+#section .join_com button span{
+    font-size: 12px;
+}
+
+
+
+
+
+
