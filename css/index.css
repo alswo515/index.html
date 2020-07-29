@@ -6,11 +6,25 @@
     padding: 20px;
 }
 
-#section ul a{
+#section .article2 a > img{
     transition: all 1s;
 }
 
-#section ul a:hover{
+#section .article2 a:hover{
+    opacity: 0.7;
+}
+#section .article3 a > img{
+    transition: all 1s;
+}
+
+#section .article3 a:hover{
+    opacity: 0.7;
+}
+#section .article4 a > img{
+    transition: all 1s;
+}
+
+#section .article4 a:hover{
     opacity: 0.7;
 }
 

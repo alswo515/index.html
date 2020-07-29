@@ -1,1 +1,148 @@
 @charset "utf-8";
+@import "common.css";
+@import "reset (1).css";
+
+#section{
+    margin-bottom: 80px;
+    color: #7c7c7c;
+    border-color: #7c7c7c;
+}
+.link{
+    margin-bottom: 10px;
+}
+
+.link ul {
+    float: right;
+}
+
+.link ul li{
+    float: left;
+}
+
+.link ul li a{
+    padding-right: 5px;
+}
+
+.link ul li:nth-child(2) > a:before{
+    content: '>';
+}
+
+
+.title h3{
+    color: #7c7c7c;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.title h3::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #7c7c7c;
+}
+
+.login{
+    /* text-align: center; */
+    border: 1px solid #ccc;
+    padding: 49px 39px;
+}
+
+.login .box_title{
+    padding: 40px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login fieldset{
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+::placeholder{
+    font-size: 10px;
+}
+
+.login form .id{
+    width: 68%;
+    height: 32px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    display: block;
+    padding: 5px;
+}
+
+.login form .password{
+    width: 68%;
+    height: 32px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    display: block;
+    padding: 5px;
+}
+
+.login form button{
+    width: 20%;
+    height: 72px;
+    color: #fff;
+    background-color: #7c7c7c;
+    position: absolute;
+    top: 0px;
+    right: 35px;
+}
+
+.login .sec_acess{
+    padding-top: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.login .id_save{
+    display: inline;
+}
+
+
+.login .find {
+    text-align: center;
+    padding: 20px 55px 5px;
+}
+
+.login .find li{
+    display: inline-block;
+}
+
+.login .find li a{
+    display: inline-block;
+    padding: 0 13px 20px 13px;
+    position: relative;
+}
+
+.login .find li a:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: #ccc;
+    width: 1px;
+    height: 20px;
+}
+
+
+.login .find li:first-child a:before{
+    display: none;
+}
+
+
+
+
+
+
