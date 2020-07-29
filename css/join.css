@@ -51,12 +51,14 @@
 #section table td:first-child label:after{
     content: " *";
     color:red;
+    line-height: 2;
 }
 
 #section table tr:nth-child(5) td:nth-child(2) select,
 #section table tr:nth-child(5) td:nth-child(2) input{
     width: 7%;
 }
+
 
 #section .join{
     padding-bottom: 60px;
@@ -121,6 +123,10 @@
 }
 #section .accept > div:nth-child(5){
     border-top: none;
+}
+
+#section .accept > div:nth-child(5) form > p{
+    padding-bottom: 10px;
 }
 
 #section .join_com{

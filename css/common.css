@@ -68,7 +68,7 @@
 }
 
 
-#header .depth1 > li:hover .depth2{
+#header .depth1  li:hover .depth2{
     display: block;
     /* 숨겨진메인메뉴를 블락시킬려면 선택자를 메뉴1의 > 직접자손 li 를 직접 지목하고 메뉴를 붙여서 선택자를 붙힌다 */
 }
@@ -78,13 +78,12 @@
     display: inline-block;
     position: absolute;
     top: 100%;
-    left: 25%;
+    left: 0%;
     transform: translate(-50%);
     display: none;
     line-height: 2;
     transition: all 0.5s;
     z-index: 999;
-
 }
 
 
