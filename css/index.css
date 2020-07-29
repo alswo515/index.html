@@ -115,11 +115,12 @@
     width: 100%;
 }
 
-#section > h3{
+#section  .article3_tit{
     color: #7c7c7c;
     margin: 11.2px 0 28px;
-    font: 28px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 50;
 }
 
 .article3 {
