@@ -35,6 +35,8 @@
 
 #header .depth1 > li{
     display: inline;
+    position: relative;
+    padding-bottom: 10px;
 }
 
 
@@ -43,6 +45,8 @@
     font-size: 13px;
     color: #7c7c7c;
     transition: all 0.5s;
+    padding-bottom: 15px;
+    display: inline-block;
 }
 
 
@@ -51,13 +55,12 @@
 }
 
 #header .depth1 > li:nth-child(3){
-    position: relative;
-    padding-bottom: 15px;
+    /* position: relative; */
     /* 메인메뉴는 호버했을때 앱솔루트 탑값을무조건 100%로 줘야한다  */
 }
 
 
-#header .depth1 > li:nth-child(3):after{
+#header .depth1 > li:nth-child(5):after{
     content: '\f0d7';
     font-weight: 900;
     font-family: 'font awesome 5 free';
@@ -68,7 +71,7 @@
 }
 
 
-#header .depth1  li:hover .depth2{
+#header .depth1  li:nth-child(5):hover .depth2{
     display: block;
     /* 숨겨진메인메뉴를 블락시킬려면 선택자를 메뉴1의 > 직접자손 li 를 직접 지목하고 메뉴를 붙여서 선택자를 붙힌다 */
 }
@@ -78,8 +81,8 @@
     display: inline-block;
     position: absolute;
     top: 100%;
-    left: 0%;
-    transform: translate(-50%);
+    left: 100%;
+    transform: translate(-100%);
     display: none;
     line-height: 2;
     transition: all 0.5s;
