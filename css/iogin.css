@@ -21,6 +21,7 @@
 
 .link ul li a{
     padding-right: 5px;
+    font-size: 12px;
 }
 
 .link ul li:nth-child(2) > a:before{
@@ -30,11 +31,11 @@
 
 .title h3{
     color: #7c7c7c;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     position: relative;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .title h3::before{

@@ -1,11 +1,15 @@
 @charset "utf-8";
 @import "reset (1).css";
 @import "common.css";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 
 #section{
     padding: 20px;
 }
-
+/* ------------------------------------ */
 #section .article2 a {
     transition: all 1s;
 }
@@ -27,7 +31,7 @@
 #section .article4 a:hover{
     opacity: 0.7;
 }
-
+/* -----------이미지올렸을때 호버효과들----------- */
 .article1{
     /* display: inline-block; */
     position: relative;
@@ -47,6 +51,7 @@
     margin-bottom: 9px;
     color: #7c7c7c;
     font-size: 18px;
+    font-family: 'Lora', serif;
 }
 
 .enrty_content .time_txt:hover{
@@ -65,6 +70,7 @@
     font-size: 52px;
     margin-bottom: 18.2px;
     transition: 1s all;
+    font-family: 'Dancing Script', cursive;
 }
 
 .enrty_content span:nth-child(3){
@@ -110,7 +116,8 @@
 #section > h3{
     color: #7c7c7c;
     margin: 11.2px 0 28px;
-    font: 28px "playfair dosplay", "serif";
+    font: 28px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .article3 {
@@ -164,13 +171,7 @@
     margin-top: 40px;
 }
 
-.section_content h3{
-    transition: 1s all;
-}
 
-.section_content h3:hover{
-    color:#95afb5
-}
 
 .section_content span:first-child{
     transition: all 1s;
@@ -186,12 +187,18 @@
     color: #7c7c7c;
     display: block;
     font-size: 16px;
-    font: "lato","sans-serif";
+    font-family: 'Lora', serif;
 }
 .section_content h3{
     margin-bottom: 12.6px;
     color: #7c7c7c;
-    font: 36px "playfair display","serif";
+    font-size: 36px;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: -1px;
+    transition: 1s all;
+}
+.section_content h3:hover{
+    color:#95afb5
 }
 
 .section_content span:last-child{
