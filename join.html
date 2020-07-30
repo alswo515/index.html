@@ -147,26 +147,28 @@
                     <tr>
                         <td><label for="sellp">휴대전화</label></td>
                         <td>
-                            <select name="sellp" id="sellp">
-                                <option value="010">
-                                    010
-                                </option>
-                                <option value="011">
-                                    011
-                                </option>
-                                <option value="016">
-                                    016
-                                </option>
-                                <option value="017">
-                                    017
-                                </option>
-                                <option value="018">
-                                    018
-                                </option>
-                                <option value="019">
-                                    019
-                                </option>
-                            </select>
+                           <label class="sell_num">
+                                <select name="sellp" id="sellp">
+                                    <option value="010">
+                                        010
+                                    </option>
+                                    <option value="011">
+                                        011
+                                    </option>
+                                    <option value="016">
+                                        016
+                                    </option>
+                                    <option value="017">
+                                        017
+                                    </option>
+                                    <option value="018">
+                                        018
+                                    </option>
+                                    <option value="019">
+                                        019
+                                    </option>
+                                </select>
+                           </label>
                             <input type="text">
                             <input type="text">
                         </td>
@@ -183,13 +185,13 @@
 
        <div class="accept">
             <h3>전체 동의</h3>
-            <div>
+            <div class="all_agree">
                 <form action="#" method="POST">
                     <fieldset>
                         <legend>이용약관 및 개인정보 수집 및 이용, 쇼핑정보 수신 (선택)에 모두 동의합니다.</legend>
                        <p>
-                            <input type="checkbox" id="">
-                            이용약관 및 개인정보 수집 및 이용, 쇼핑정보 수신 (선택)에 모두 동의합니다.
+                            <input type="checkbox" id="tou_1">
+                           <label for="tou_1"> 이용약관 및 개인정보 수집 및 이용, 쇼핑정보 수신 (선택)에 모두 동의합니다.</label>
                         </p>
                     </fieldset>
                 </form>
@@ -364,7 +366,7 @@
                     </textarea>
                    <p>
                         이용약관에 동의하십니까?
-                        <input type="checkbox" name="" id="">동의함
+                        <input type="checkbox" name="" id="tou_2"><label for="tou_2">동의함</label>
                    </p>
                 </form>
             </div>
@@ -425,7 +427,7 @@ o 로그 기록
                     </textarea>
                     <p>
                         개인정보 수집 및 이용에 동의하십니까?
-                        <input type="checkbox" name="" id="">동의함
+                        <input type="checkbox" name="" id="tou_3"><label for="tou_3">동의함</label>
                     </p>
                 </form>
             </div>
@@ -442,11 +444,11 @@ o 로그 기록
                     </textarea>
                     <p>
                         SMS 수신을 동의하십니까?
-                        <input type="checkbox" name="" id="">동의함
+                        <input type="checkbox" name="" id="tou_4"><label for="tou_4">동의함</label>
                     </p>
                     <p>
                         이메일 수신을 동의하십니까?
-                        <input type="checkbox" name="" id="">동의함
+                        <input type="checkbox" name="" id="tou_5"><label for="tou_5">동의함</label>
                     </p>
                 </form>
             </div>
