@@ -146,4 +146,18 @@
 
 
 
+.id::placeholder{
+    font-size: 14px;
+}
+
+.password::placeholder{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
 

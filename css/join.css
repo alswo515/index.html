@@ -64,6 +64,13 @@
     padding-bottom: 60px;
 }
 
+#section .accept  input[type=checkbox]{
+    transform: scale(1.5);
+    width: 13px;
+    height: 14px;
+}
+
+
 #section .accept > h3{
     margin: 10px 0 50px;
     font-size: 20.8px;
