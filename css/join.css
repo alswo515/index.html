@@ -57,6 +57,7 @@
 #section table tr:nth-child(5) td:nth-child(2) .sell_num,
 #section table tr:nth-child(5) td:nth-child(2) input{
     width: 7%;
+    /* label테그가 셀렉트테그를 감싸고있으므로 값을변경해준다 */
 }
 
 
@@ -68,6 +69,7 @@
     position: relative;
     border: #ccc 1px solid;
     padding: 2px 4px;
+    /* label테그가 넓이값을 가졋으므로 안에있는 셀렉트 값이 넓이의 100%를 잡아야한다 */
 }
 
 #section table tr:nth-child(5) td:nth-child(2) .sell_num{
@@ -184,13 +186,16 @@
     color: #353535;
     font-weight: bold;
 }
-#section .accept > div textarea{
+#section .accept > div .textarea{
     width: 100%;
-    border: none;
-    resize: none;
+    height: 120px;
+    border: #fff;
+    /* resize: none; */
+    background-color: #fff;
     color: #7c7c7c;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    overflow-y: auto;
 }
 
 
