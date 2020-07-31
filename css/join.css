@@ -54,17 +54,14 @@
     line-height: 1.5;
 }
 
-#section table tr:nth-child(5) td:nth-child(2) select,
+#section table tr:nth-child(5) td:nth-child(2) .sell_num,
 #section table tr:nth-child(5) td:nth-child(2) input{
     width: 7%;
 }
 
-#section table tr:nth-child(5) td:nth-child(2) select{
-    position: relative;
-}
-
 
 #section table tr:nth-child(5) td:nth-child(2) select{
+    width:100%;
     -webkit-appearance: none;
     background: transparent;
     z-index: 999999;
@@ -74,8 +71,9 @@
 }
 
 #section table tr:nth-child(5) td:nth-child(2) .sell_num{
-    /* position: relative; */
-    display: inline;
+    position: relative;
+    display: inline-block;
+    /* 포지션값이 들어가서 디스플레이값을변경해줘야한다 */
 }
 
 /* /* #section table tr:nth-child(5) td:nth-child(2) .sell_num:after{ */ 
@@ -89,16 +87,15 @@
     /* line-height: 20px; */
 /* } */
 
-#section table tr:nth-child(5) td:nth-child(2) select:after{
+#section table tr:nth-child(5) td:nth-child(2) .sell_num:after{
     content: '';
     display: inline-block;
     z-index: 9999;
-    /* line-height: 20px; */
     width: 10px;
-    height: 6px;
+    height: 7px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 9px;
+    right: 5px;
     background-image: url(../images/sprite_img.png);
     background-repeat: no-repeat;
     background-size: auto;
