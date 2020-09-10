@@ -9,14 +9,14 @@
         e.preventDefault()
         var url = $(this).attr('href')
         $('#kimContainer').remove()
-        $('#kimBox').load(url)
+        $('#containerBox').load(url)
     })
 
     $('.logo > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#kimContainer').remove()
-        $('#kimBox').load(url)
+        $('#containerBox').load(url)
     })
 
 
