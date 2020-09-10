@@ -3,7 +3,7 @@
 @import "reset (1).css";
 
 
-#section .join>h3 {
+#join_section .join>h3 {
     margin: 10px 0 50px;
     font-size: 20.8px;
     position: relative;
@@ -11,7 +11,7 @@
     color: #7c7c7c;
 }
 
-#section .join>h3:after {
+#join_section .join>h3:after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -21,47 +21,47 @@
     background-color: #ddd;
 }
 
-#section table {
+#join_section table {
     border: 1px solid #ddd;
 }
 
-#section table input {
+#join_section table input {
     padding: 2px 4px;
     border: 1px solid #ccc;
     width: 15%;
 }
 
-#section table td:first-child {
+#join_section table td:first-child {
     background-color: #fbfafa;
     color: #000;
 }
 
-#section table tr td {
+#join_section table tr td {
     padding: 11px 0 10px 18px;
 }
 
-#section table tr td:first-child {
+#join_section table tr td:first-child {
     width: 20%;
 }
 
-#section table label {
+#join_section table label {
     color: #7c7c7c;
 }
 
-#section table td:first-child label:after {
+#join_section table td:first-child label:after {
     content: " *";
     color: red;
     line-height: 1.5;
 }
 
-#section table tr:nth-child(5) td:nth-child(2) .sell_num,
-#section table tr:nth-child(5) td:nth-child(2) input {
+#join_section table tr:nth-child(5) td:nth-child(2) .sell_num,
+#join_section table tr:nth-child(5) td:nth-child(2) input {
     width: 7%;
     /* label테그가 셀렉트테그를 감싸고있으므로 값을변경해준다 */
 }
 
 
-#section table tr:nth-child(5) td:nth-child(2) select {
+#join_section table tr:nth-child(5) td:nth-child(2) select {
     width: 100%;
     -webkit-appearance: none;
     background: transparent;
@@ -72,13 +72,13 @@
     /* label테그가 넓이값을 가졋으므로 안에있는 셀렉트 값이 넓이의 100%를 잡아야한다 */
 }
 
-#section table tr:nth-child(5) td:nth-child(2) .sell_num {
+#join_section table tr:nth-child(5) td:nth-child(2) .sell_num {
     position: relative;
     display: inline-block;
     /* 포지션값이 들어가서 디스플레이값을변경해줘야한다 */
 }
 
-/* /* #section table tr:nth-child(5) td:nth-child(2) .sell_num:after{ */
+/* /* #join_section table tr:nth-child(5) td:nth-child(2) .sell_num:after{ */
 /* content: '\f0dd'; */
 /* font-family: 'font awesome 5 free'; */
 /* font-weight: 900; */
@@ -89,7 +89,7 @@
 /* line-height: 20px; */
 /* } */
 
-#section table tr:nth-child(5) td:nth-child(2) .sell_num:after {
+#join_section table tr:nth-child(5) td:nth-child(2) .sell_num:after {
     content: '';
     display: inline-block;
     z-index: 9999;
@@ -108,11 +108,11 @@
 
 
 
-#section .join {
+#join_section .join {
     padding-bottom: 60px;
 }
 
-#section .accept input[type=checkbox] {
+#join_section .accept input[type=checkbox] {
     transform: scale(1.5);
     width: 13px;
     height: 14px;
@@ -120,15 +120,15 @@
 
 }
 
-#section .accept p {
+#join_section .accept p {
     color: #000;
 }
 
-#section .accept label {
+#join_section .accept label {
     margin-left: 10px;
 }
 
-#section .accept label:before {
+#join_section .accept label:before {
     content: '\f0c8';
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
@@ -139,7 +139,7 @@
     /* transform: scale(1.5); */
 }
 
-#section .accept input[type=checkbox]:checked+label:before {
+#join_section .accept input[type=checkbox]:checked+label:before {
     content: '\f14a';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -148,7 +148,7 @@
 }
 
 
-#section .accept>h3 {
+#join_section .accept>h3 {
     margin: 10px 0 50px;
     font-size: 20.8px;
     position: relative;
@@ -156,7 +156,7 @@
     color: #7c7c7c;
 }
 
-#section .accept>h3:after {
+#join_section .accept>h3:after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -167,28 +167,28 @@
 }
 
 
-#section .accept>div {
+#join_section .accept>div {
     padding: 20px;
     background-color: #fbfafa;
     border: 1px #ccc solid;
 }
 
-#section .accept>div form>h4 {
+#join_section .accept>div form>h4 {
     margin-bottom: 20px;
     color: #7c7c7c;
 }
 
-#section .accept>div:nth-child(2) input {
+#join_section .accept>div:nth-child(2) input {
     /* width: 100%; */
 }
 
-#section .accept>div:nth-child(2) p {
+#join_section .accept>div:nth-child(2) p {
     font-size: 18.2px;
     color: #353535;
     font-weight: bold;
 }
 
-#section .accept>div .textarea {
+#join_section .accept>div .textarea {
     width: 100%;
     height: 120px;
     border: #fff;
@@ -204,28 +204,28 @@
 
 
 
-#section .accept>div:nth-child(3) {
+#join_section .accept>div:nth-child(3) {
     border-top: none;
 }
 
-#section .accept>div:nth-child(4) {
+#join_section .accept>div:nth-child(4) {
     border-top: none;
 }
 
-#section .accept>div:nth-child(5) {
+#join_section .accept>div:nth-child(5) {
     border-top: none;
 }
 
-#section .accept>div:nth-child(5) form>p {
+#join_section .accept>div:nth-child(5) form>p {
     padding-bottom: 10px;
 }
 
-#section .join_com {
+#join_section .join_com {
     padding: 30px 0;
     text-align: center;
 }
 
-#section .join_com button {
+#join_section .join_com button {
     background-color: #222;
     padding: 10px 8px;
     font-size: 12px;
@@ -234,6 +234,6 @@
     height: 40px;
 }
 
-#section .join_com button span {
+#join_section .join_com button span {
     font-size: 12px;
 }
