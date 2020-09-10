@@ -2,12 +2,13 @@
 @import "common.css";
 @import "reset (1).css";
 
-#section{
+#section {
     margin-bottom: 80px;
     color: #7c7c7c;
     border-color: #7c7c7c;
 }
-.link{
+
+.link {
     margin-bottom: 10px;
 }
 
@@ -15,21 +16,21 @@
     float: right;
 }
 
-.link ul li{
+.link ul li {
     float: left;
 }
 
-.link ul li a{
+.link ul li a {
     padding-right: 5px;
     font-size: 12px;
 }
 
-.link ul li:nth-child(2) > a:before{
+.link ul li:nth-child(2)>a:before {
     content: '>';
 }
 
 
-.title h3{
+.title h3 {
     color: #7c7c7c;
     padding-bottom: 15px;
     position: relative;
@@ -38,7 +39,7 @@
     margin-bottom: 40px;
 }
 
-.title h3::before{
+.title h3::before {
     content: '';
     width: 100%;
     height: 1px;
@@ -48,19 +49,19 @@
     background-color: #ccc;
 }
 
-.login{
+.login {
     /* text-align: center; */
     border: 1px solid #ccc;
     padding: 49px 39px;
 }
 
-.login .box_title{
+.login .box_title {
     padding: 40px;
     text-align: center;
     font-size: 22px;
 }
 
-.login fieldset{
+.login fieldset {
     width: 450px;
     display: block;
     margin: 0 auto;
@@ -68,11 +69,11 @@
 }
 
 
-::placeholder{
+::placeholder {
     font-size: 10px;
 }
 
-.login form .id{
+.login form .id {
     width: 68%;
     height: 32px;
     border: 1px solid #ccc;
@@ -81,7 +82,7 @@
     padding: 5px;
 }
 
-.login form .password{
+.login form .password {
     width: 68%;
     height: 32px;
     border: 1px solid #ccc;
@@ -90,7 +91,7 @@
     padding: 5px;
 }
 
-.login form button{
+.login form button {
     width: 20%;
     height: 72px;
     color: #fff;
@@ -100,14 +101,14 @@
     right: 35px;
 }
 
-.login .sec_acess{
+.login .sec_acess {
     padding-top: 10px;
     margin-bottom: 40px;
     display: inline-block;
     padding-right: 10px;
 }
 
-.login .id_save{
+.login .id_save {
     display: inline;
 }
 
@@ -117,17 +118,17 @@
     padding: 20px 55px 5px;
 }
 
-.login .find li{
+.login .find li {
     display: inline-block;
 }
 
-.login .find li a{
+.login .find li a {
     display: inline-block;
     padding: 0 13px 20px 13px;
     position: relative;
 }
 
-.login .find li a:before{
+.login .find li a:before {
     content: '';
     position: absolute;
     top: 2px;
@@ -138,7 +139,7 @@
 }
 
 
-.login .find li:first-child a:before{
+.login .find li:first-child a:before {
     display: none;
 }
 
@@ -146,18 +147,10 @@
 
 
 
-.id::placeholder{
+.id::placeholder {
     font-size: 14px;
 }
 
-.password::placeholder{
+.password::placeholder {
     font-size: 14px;
 }
-
-
-
-
-
-
-
-
