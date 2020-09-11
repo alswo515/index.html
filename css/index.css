@@ -7,64 +7,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 
-#section{
+#section {
     padding: 20px;
 }
+
 /* ------------------------------------ */
 #section .article2 a {
     transition: all 1s;
 }
 
-#section .article2 a:hover{
+#section .article2 a:hover {
     opacity: 0.7;
 }
+
 #section .article3 a {
     transition: all 1s;
 }
 
-#section .article3 a:hover{
+#section .article3 a:hover {
     opacity: 0.7;
 }
+
 #section .article4 a {
     transition: all 1s;
 }
 
-#section .article4 a:hover{
+#section .article4 a:hover {
     opacity: 0.7;
 }
+
 /* -----------이미지마우스 커서올렸을때 호버효과들----------- */
-.article1{
+.article1 {
     /* display: inline-block; */
     position: relative;
-    margin:0 17.4129px 40px ;
+    margin: 0 17.4129px 40px;
 }
 
-.enrty_content{
+.enrty_content {
     width: 51%;
     float: left;
     position: absolute;
     top: 30%;
-    left: 0%; 
+    left: 0%;
 }
 
-.enrty_content span{
-    display:block;
+.enrty_content span {
+    display: block;
     margin-bottom: 9px;
     color: #7c7c7c;
     font-size: 18px;
     font-family: 'Lora', serif;
 }
 
-.enrty_content .time_txt:hover{
+.enrty_content .time_txt:hover {
     color: #95afb5;
 }
 
-.enrty_content .time_txt{
+.enrty_content .time_txt {
     transition: 1s all;
 }
-.enrty_content h2:hover{
+
+.enrty_content h2:hover {
     color: #95afb5;
 }
+
 .enrty_content h2 {
     display: inline-block;
     color: #7c7c7c;
@@ -75,11 +81,11 @@
     line-height: 1em;
 }
 
-.enrty_content span:nth-child(3){
+.enrty_content span:nth-child(3) {
     margin-bottom: 40.5px;
 }
 
-.enrty_content span:nth-child(3):before{
+.enrty_content span:nth-child(3):before {
     content: '';
     background-color: #7c7c7c;
     width: 65px;
@@ -89,33 +95,35 @@
     left: 0;
 }
 
-.article1_img img{
+.article1_img img {
     width: 49%;
     float: right;
 }
 
-.article2{
+.article2 {
     margin-bottom: 40px;
 }
-.article2 > li{
+
+.article2>li {
     float: left;
     width: 33.33333333%;
 }
+
 /* 플롯 정렬을 할때는 li값에 width값을 주고 이미지에 100%를 주면 이미지는 다보이면서 한줄정렬할수 있다 하지만 li 안에 구성요소에 높이값을 줘야한다 */
-.article2 > li{
-    padding:0 17.4129px;
+.article2>li {
+    padding: 0 17.4129px;
 }
 
-.article2 > li > a{
+.article2>li>a {
     height: 504px;
 }
 
 
-.article2 img{
+.article2 img {
     width: 100%;
 }
 
-#section  .article3_tit{
+#section .article3_tit {
     color: #7c7c7c;
     margin: 11.2px 0 28px;
     font-size: 28px;
@@ -128,50 +136,75 @@
 }
 
 /* -------------메인메뉴 이미지 포지션테그들------- */
-.article3 > li{
+.article3>li {
     float: left;
     width: 33.33333%;
 }
-.article3 > li >a{
+
+.article3>li>a {
     height: 504px;
 }
 
-.article3 img{
+.article3 img {
     width: 100%;
 }
 
 
-.article3 > li{
-    padding:0 17.4129px;
+.article3>li {
+    padding: 0 17.4129px;
 }
 
-.article4{
+.article4 {
     margin-bottom: 40px;
     margin-top: 4em;
 }
 
-.article4 > li{
+.article4>li {
     float: left;
     width: 33.33333%;
 }
 
-.article4 > li > a{
+.article4>li>a {
     height: 504px;
 }
 
-.article4 img{
+.article4 img {
     width: 100%;
 }
 
 
-.article4 > li{
-    padding:0 17.4129px;
+.article4>li {
+    padding: 0 17.4129px;
+}
+
+
+.article4 {
+    margin-bottom: 40px;
+    margin-top: 4em;
+}
+
+.article4>li {
+    float: left;
+    width: 33.33333%;
+}
+
+.article4>li>a {
+    height: 504px;
+}
+
+.article4 img {
+    width: 100%;
+}
+
+
+.article4>li {
+    padding: 0 17.4129px;
 }
 
 /* -------------메인메뉴 이미지 포지션테그들------- */
 
 
-.section_content{
+.section_content {
     text-align: left;
     padding: 0 15px;
     margin-top: 40px;
@@ -179,23 +212,24 @@
 
 
 
-.section_content span:first-child{
+.section_content span:first-child {
     transition: all 1s;
 }
 
-.section_content span:first-child:hover{
-    color:#95afb5
+.section_content span:first-child:hover {
+    color: #95afb5
 }
 
 
-.section_content span{
+.section_content span {
     margin-bottom: 8px;
     color: #7c7c7c;
     display: block;
     font-size: 16px;
     font-family: 'Lora', serif;
 }
-.section_content h3{
+
+.section_content h3 {
     margin-bottom: 12.6px;
     color: #7c7c7c;
     font-size: 33px;
@@ -203,16 +237,17 @@
     letter-spacing: 3px;
     transition: 1s all;
 }
-.section_content h3:hover{
-    color:#95afb5
+
+.section_content h3:hover {
+    color: #95afb5
 }
 
-.section_content span:last-child{
+.section_content span:last-child {
     position: relative;
     padding-bottom: 30px;
 }
 
-.section_content span:last-child:before{
+.section_content span:last-child:before {
     content: '';
     background-color: #7c7c7c;
     position: absolute;
@@ -226,23 +261,23 @@
 
 
 
-.older_posts{
+.older_posts {
     padding: 40px 0 80px;
     text-align: center;
 }
 
-.older_posts button{
+.older_posts button {
     background: #e9f1f2;
     border: solid 1px #fff;
     transition: all 1s;
 }
 
-.older_posts button:hover{
+.older_posts button:hover {
     background-color: #fff;
     border: solid 1px #ccc;
 }
 
-.older_posts span{
+.older_posts span {
     font-size: 13px;
     color: #7c7c7c;
     display: inline-block;
@@ -251,5 +286,20 @@
 
 
 
+.gotop {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999999999999;
+    opacity: 0;
+}
 
+.gotop.on {
+    display: block;
+}
 
+.gotop img {
+    width: 70px;
+    cursor: pointer;
+}
