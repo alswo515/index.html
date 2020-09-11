@@ -1,45 +1,46 @@
 @import "reset (1).css";
-.row{
+
+.row {
     max-width: 1361px;
     margin: 0 auto;
 }
 
 
 
-#header{
+#header {
     position: relative;
     height: 178px;
     padding: 20px 10px;
 }
 
-#header .logo{
+#header .logo {
     margin-bottom: 60px;
     display: inline-block;
     padding-top: 15px;
 }
 
 
-#header .nav{
+#header .nav {
     float: right;
     padding-top: 10px;
 }
 
-#header .depth1{
+#header .depth1 {
     display: inline-block;
     margin-top: 10px;
     padding-right: 26.4688px;
-    font-family: "Lato","sans-serif";
+    font-family: "Lato", "sans-serif";
 }
 
 
 
-#header .depth1 > li{
+#header .depth1>li {
     display: inline;
     padding-bottom: 10px;
 }
 
 
-#header .depth1 > li > a{
+#header .depth1>li>a {
     padding: 0px 19.5px;
     font-size: 13px;
     color: #7c7c7c;
@@ -49,31 +50,32 @@
 }
 
 
-#header .depth1 > li > a:hover{
+#header .depth1>li>a:hover {
     color: #95afb5;
 }
 
-#header .depth1 > li:nth-child(5){
+#header .depth1>li:nth-child(5) {
     position: relative;
 }
 
-#header .depth1 > li:nth-child(5):after{
+#header .depth1>li:nth-child(5):after {
     content: '\f0d7';
     font-weight: 900;
     font-family: 'font awesome 5 free';
 }
 
-#header .depth1 > .depth2{
+#header .depth1>.depth2 {
     transition: all 1s;
 }
 
 
-#header .depth1  li:hover .depth2{
+/* 숨겨진메인메뉴를 블락시킬려면 선택자를 메뉴1의 > 직접자손 li 를 직접 지목하고 메뉴를 붙여서 선택자를 붙힌다 */
+/* #header .depth1 li:hover .depth2 {
     display: block;
-    /* 숨겨진메인메뉴를 블락시킬려면 선택자를 메뉴1의 > 직접자손 li 를 직접 지목하고 메뉴를 붙여서 선택자를 붙힌다 */
+    animation: animate__fadeIn 0.5s;
 }
 
-#header .depth2{
+#header .depth2 {
     text-align: center;
     display: inline-block;
     position: absolute;
@@ -83,53 +85,52 @@
     line-height: 2;
     transition: all 0.5s;
     z-index: 999;
-}
+    animation: animate__fadeOut 0.5s;
+} */
 
 
 
 
-#header .depth2 > li a{
+#header .depth2>li a {
     display: inline-block;
     padding: 13px 0;
     width: 200px;
     color: #7c7c7c;
-    /* opacity: 0.8; */
     font-size: 13px;
-    /* border: 1px solid #fff; */
     transition: 1s all;
     background-color: #e9f1f2;
 }
 
-#header .depth2 > li:nth-child(1) a{
+#header .depth2>li:nth-child(1) a {
     opacity: 1;
 }
 
 
-#header .depth2 > li:hover a{
+#header .depth2>li:hover a {
     /* border: 1px solid #ccc; */
     opacity: 1;
     background-color: #fff;
 
 }
 
-#header .depth2 > li:nth-child(2):hover a{
+#header .depth2>li:nth-child(2):hover a {
     border-top: none;
     opacity: 1;
 
 }
 
-#header .depth2 > li > a:hover{
+#header .depth2>li>a:hover {
     color: #7c7c7c;
     opacity: 1;
 }
 
-#header .nav .sns{
+#header .nav .sns {
     display: inline;
     position: relative;
     padding-left: 35px;
 }
 
-#header .nav .sns:after{
+#header .nav .sns:after {
     content: '';
     width: 1px;
     height: 40px;
@@ -141,11 +142,11 @@
 }
 
 
-#header .nav .sns > li{
+#header .nav .sns>li {
     display: inline;
 }
 
-#header .nav .sns > li > a{
+#header .nav .sns>li>a {
     display: inline-block;
     font-size: 16px;
     color: #7c7c7c;
@@ -154,21 +155,25 @@
 }
 
 
-#header .nav .sns > li:nth-child(1):hover > a{
+#header .nav .sns>li:nth-child(1):hover>a {
     color: skyblue;
 }
-#header .nav .sns > li:nth-child(2):hover > a{
+
+#header .nav .sns>li:nth-child(2):hover>a {
     color: orangered;
 }
-#header .nav .sns > li:nth-child(3):hover > a{
+
+#header .nav .sns>li:nth-child(3):hover>a {
     color: green;
 }
-#header .nav .sns > li:nth-child(4):hover > a{
+
+#header .nav .sns>li:nth-child(4):hover>a {
     color: red;
 }
+
 /* ----------여기까지 헤더------------------ */
 
-#footer{
+#footer {
     margin: 0 auto;
     padding: 62.6666px 46.6667px 0;
     color: #7c7c7c;
@@ -176,34 +181,34 @@
 }
 
 
-#footer h3{
+#footer h3 {
     font-size: 24px;
     font-family: "playfair display";
 }
 
 
 #footer p,
-#footer li > a{
+#footer li>a {
     font-size: 16px;
 }
 
-#footer .help{
+#footer .help {
     float: left;
     padding: 0 64px 64px;
     width: 33.3333333%;
 }
 
-#footer .help h3{
+#footer .help h3 {
     position: relative;
     padding-bottom: 18px;
 }
 
-#footer .help p{
+#footer .help p {
     padding-top: 36px;
 }
 
 
-#footer .help h3:after{
+#footer .help h3:after {
     content: '';
     position: absolute;
     left: 0;
@@ -214,30 +219,30 @@
 }
 
 
-#footer .link{
+#footer .link {
     float: left;
     padding: 0 64px 64px;
     width: 33.3333333%;
 }
 
 
-#footer .link h3{
+#footer .link h3 {
     position: relative;
     padding-bottom: 18px;
 }
 
-#footer .link ul{
+#footer .link ul {
     padding-top: 36px;
 }
 
-#footer .link li>a{
+#footer .link li>a {
     display: inline-block;
     padding: 8px 0;
 }
 
 
 
-#footer .link h3:after{
+#footer .link h3:after {
     content: '';
     position: absolute;
     left: 0;
@@ -247,31 +252,31 @@
     background-color: #7c7c7c;
 }
 
-#footer .site_search{
+#footer .site_search {
     float: right;
     padding: 0 64px 64px;
     width: 33.3333333%;
 }
 
 
-#footer .site_search h3{
+#footer .site_search h3 {
     position: relative;
     padding-bottom: 18px;
 }
 
-#footer .site_search form{
+#footer .site_search form {
     padding-top: 36px;
 }
 
 
-#footer .site_search input{
+#footer .site_search input {
     height: 40px;
     width: 70%;
     float: left;
     padding: 10px;
 }
 
-#footer .site_search button{
+#footer .site_search button {
     background: #dce7e9;
     height: 40px;
     width: 30%;
@@ -279,7 +284,7 @@
 }
 
 
-#footer .site_search h3:after{
+#footer .site_search h3:after {
     content: '';
     position: absolute;
     left: 0;
@@ -291,20 +296,20 @@
 
 
 
- .blog_go{
+.blog_go {
     text-align: center;
     padding: 36px;
     background: #dce7e9;
     width: 100%;
 }
 
- .blog_go a{
+.blog_go a {
     display: inline-block;
     color: #7c7c7c;
 }
 
 
-input::placeholder{
+input::placeholder {
     font-size: 20px;
     /* padding-left: 10px; */
 }
