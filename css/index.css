@@ -203,6 +203,49 @@
 
 /* -------------메인메뉴 이미지 포지션테그들------- */
 
+.ar {
+    margin-bottom: 40px;
+    margin-top: 4em;
+}
+
+.ar>li {
+    float: left;
+    width: 33.33333%;
+}
+
+.ar>li>a {
+    height: 504px;
+}
+
+.ar img {
+    width: 100%;
+}
+
+
+.ar>li {
+    padding: 0 17.4129px;
+}
+
+
+.ar {
+    margin-bottom: 40px;
+    margin-top: 4em;
+}
+
+.ar>li {
+    float: left;
+    width: 33.33333%;
+}
+
+.ar>li>a {
+    height: 504px;
+}
+
+
+/* -------------버튼클릭시 나타날 이미지들 스타일------- */
+
+
+
 
 .section_content {
     text-align: left;
@@ -264,15 +307,16 @@
 .older_posts {
     padding: 40px 0 80px;
     text-align: center;
+    height: 19.5px;
 }
 
-.older_posts button {
+.older_posts a {
     background: #e9f1f2;
     border: solid 1px #fff;
     transition: all 1s;
 }
 
-.older_posts button:hover {
+.older_posts a:hover {
     background-color: #fff;
     border: solid 1px #ccc;
 }

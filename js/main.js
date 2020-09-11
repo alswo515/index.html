@@ -1,7 +1,9 @@
 (function ($) {
-    $('.older_posts > form > button').on('click', function (e) {
+    $('.older_posts > a').on('click', function (e) {
         e.preventDefault()
-        $('article4').removeClass('blind')
+        $('article5').addClass('blind')
+        $('article6').addClass('blind')
+        $('article7').addClass('blind')
         return false
     })
 })(jquery)
