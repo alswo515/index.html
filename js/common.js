@@ -13,5 +13,10 @@
     })
 
 
+    $('.older_posts > form > button').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+    })
+
 
 })(jQuery)

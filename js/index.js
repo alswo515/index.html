@@ -1,7 +1,7 @@
 (function ($) {
     $(".depth1 > li").hover(
         function () {
-            $(this).find(".depth2").stop().slideDown(700);
+            $(this).find(".depth2").stop().slideDown(500);
         },
         function () {
             $(this).find(".depth2").stop().slideUp(500).css({
