@@ -73,20 +73,11 @@
 /* #header .depth1 li:hover .depth2 {
     display: block;
     animation: animate__fadeIn 0.5s;
-}
+}*/
 
 #header .depth2 {
-    text-align: center;
-    display: inline-block;
-    position: absolute;
-    top: 100%;
-    right: 0;
     display: none;
-    line-height: 2;
-    transition: all 0.5s;
-    z-index: 999;
-    animation: animate__fadeOut 0.5s;
-} */
+}
 
 
 
