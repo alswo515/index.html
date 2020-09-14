@@ -104,17 +104,17 @@
     margin-bottom: 40px;
 }
 
-.article2>li {
+.article2>.article2li {
     float: left;
     width: 33.33333333%;
 }
 
 /* 플롯 정렬을 할때는 li값에 width값을 주고 이미지에 100%를 주면 이미지는 다보이면서 한줄정렬할수 있다 하지만 li 안에 구성요소에 높이값을 줘야한다 */
-.article2>li {
+.article2>.article2li {
     padding: 0 17.4129px;
 }
 
-.article2>li>a {
+.article2>.article2li>a {
     height: 504px;
 }
 
