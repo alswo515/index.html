@@ -123,6 +123,37 @@
     width: 100%;
 }
 
+.article2 .article2li {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.article2 .article2li.animate__fadeInUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.article2 {
+    overflow: hidden;
+}
+
+.article2.on .actli {
+    animation: fadeInUp 1s both 0s;
+}
+
+.article2.on .actli:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.article2.on .actli:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.article2.on .actli:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
 #section .article3_tit {
     color: #7c7c7c;
     margin: 11.2px 0 28px;
@@ -136,12 +167,12 @@
 }
 
 /* -------------메인메뉴 이미지 포지션테그들------- */
-.article3>li {
+.article3>.article3li {
     float: left;
     width: 33.33333%;
 }
 
-.article3>li>a {
+.article3>.article3li>a {
     height: 504px;
 }
 
@@ -150,7 +181,7 @@
 }
 
 
-.article3>li {
+.article3>.article3li {
     padding: 0 17.4129px;
 }
 
@@ -159,12 +190,12 @@
     margin-top: 4em;
 }
 
-.article4>li {
+.article4>.article4li {
     float: left;
     width: 33.33333%;
 }
 
-.article4>li>a {
+.article4>.article4li>a {
     height: 504px;
 }
 
@@ -173,7 +204,7 @@
 }
 
 
-.article4>li {
+.article4>.article4li {
     padding: 0 17.4129px;
 }
 
@@ -183,12 +214,12 @@
     margin-top: 4em;
 }
 
-.article4>li {
+.article4>.article4li {
     float: left;
     width: 33.33333%;
 }
 
-.article4>li>a {
+.article4>.article4li>a {
     height: 504px;
 }
 
@@ -197,50 +228,84 @@
 }
 
 
-.article4>li {
+.article4>.article4li {
     padding: 0 17.4129px;
 }
 
 /* -------------메인메뉴 이미지 포지션테그들------- */
 
-.ar {
+.article5 {
     margin-bottom: 40px;
     margin-top: 4em;
 }
 
-.ar>li {
+.article5>.article5li {
     float: left;
     width: 33.33333%;
 }
 
-.ar>li>a {
+.article5>.article5li>a {
     height: 504px;
 }
 
-.ar img {
+.article5 img {
     width: 100%;
 }
 
 
-.ar>li {
+.article5>.article5li {
     padding: 0 17.4129px;
 }
 
 
-.ar {
+.article6>.article6li {
     margin-bottom: 40px;
     margin-top: 4em;
 }
 
-.ar>li {
+.article6>.article6li {
     float: left;
     width: 33.33333%;
 }
 
-.ar>li>a {
+.article6>.article6li>a {
     height: 504px;
 }
 
+.article6 img {
+    width: 100%;
+}
+
+.article6>.article6li {
+    padding: 0 17.4129px;
+}
+
+.article7>.article7li {
+    padding: 0 17.4129px;
+}
+
+.article7>.article7li {
+    margin-bottom: 40px;
+    margin-top: 4em;
+}
+
+.article7>.article7li {
+    float: left;
+    width: 33.33333%;
+}
+
+.article7>.article7li>a {
+    height: 504px;
+}
+
+.article7 img {
+    width: 100%;
+}
+
+
+.article7>.article7li {
+    padding: 0 17.4129px;
+}
 
 /* -------------버튼클릭시 나타날 이미지들 스타일------- */
 
@@ -299,7 +364,6 @@
     width: 60px;
     height: 2px;
 }
-
 
 
 

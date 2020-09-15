@@ -6,4 +6,4 @@
         $('article7').addClass('blind')
         return false
     })
-})(jquery)
+})(jQuery)
