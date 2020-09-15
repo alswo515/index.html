@@ -7,7 +7,7 @@
             $(this).find(".depth2").stop().slideDown(500);
         },
         function () {
-            $(this).find(".depth2").stop().slideUp(500).css({
+            $(this).find(".depth2").stop().slideUp().css({
                 textAlign: 'center',
                 display: 'inline-block',
                 position: 'absolute',
@@ -15,7 +15,8 @@
                 right: "0",
                 display: 'none',
                 lineHeight: '2',
-                zIndex: '999'
+                zIndex: '999',
+                // transition: "all 0.5s"
             });
         }
     );

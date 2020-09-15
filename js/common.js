@@ -5,7 +5,7 @@
   //   $(".introAni").delay(500).fadeOut(500);
   // });
 
-  //로딩화면
+  //로딩화면 후 article1 의 시작 애니메이션
   var colorCode = ['red', 'blue', 'green', 'yellow', 'lime']
   var mincnt = setInterval(minusCount, 1000)
   var k = 2
@@ -15,6 +15,7 @@
     if (k === 0) {
       clearInterval(mincnt)
       $('.introAni').fadeOut(500)
+      $(".article1").addClass("on");
       return false
     }
     //배열변수를 사용해서 글자색깔을 바꿔주는코드
