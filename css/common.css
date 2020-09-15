@@ -337,10 +337,11 @@ input::placeholder {
     color: #fff;
 }
 
-.introAni span {
+.introAni img {
     position: absolute;
     top: 40%;
-    transform: translateY(-50%);
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 25%;
     text-align: center;
 }
