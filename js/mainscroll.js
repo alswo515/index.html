@@ -2,6 +2,7 @@ $(window).scroll(function () {
     var sct = $(this).scrollTop()
     var actNear = $('.article2').offset().top - $(this).height() / 2
     var act3Near = $('.article3').offset().top - $(this).height() / 2
+    var act3TitNear = $('.article3_tit').offset().top - $(this).height() / 2
     var act4Near = $('.article4').offset().top - $(this).height() / 2
     var act5Near = $('.article5').offset().top - $(this).height() / 2
     var act6Near = $('.article6').offset().top - $(this).height() / 2
@@ -11,6 +12,11 @@ $(window).scroll(function () {
         $(".article2").addClass("on");
     } else {
         $(".article2").removeClass("on");
+    }
+    if (sct >= act3TitNear) {
+        $(".article3_tit").addClass("on");
+    } else {
+        $(".article3_tit").removeClass("on");
     }
     if (sct >= act3Near) {
         $(".article3").addClass("on");
