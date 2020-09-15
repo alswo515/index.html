@@ -539,6 +539,7 @@
 .older_posts a {
     background: #e9f1f2;
     border: solid 1px #fff;
+    padding: 15px 20px;
     transition: all 1s;
 }
 
