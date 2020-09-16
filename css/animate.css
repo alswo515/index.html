@@ -3777,6 +3777,12 @@
   50% {
     opacity: 1;
   }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
 }
 
 @keyframes zoomIn {
@@ -3788,6 +3794,12 @@
 
   50% {
     opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 }
 

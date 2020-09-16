@@ -26,6 +26,10 @@
     vertical-align: middle;
 }
 
+.sbox #skeyword {
+    background: #ddd;
+}
+
 .sbox input[type=submit] {
     height: 30px;
     background: #ddd;
