@@ -1,0 +1,120 @@
+@charset 'utf-8';
+
+.noticePage {
+    padding: 136px 0px;
+}
+
+.noticePage h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0 20px;
+}
+
+.sbox {
+    text-align: center;
+}
+
+.sbox select {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.sbox input[type=text] {
+    height: 30px;
+    width: 200px;
+    text-indent: 1em;
+    vertical-align: middle;
+}
+
+.sbox input[type=submit] {
+    height: 30px;
+    background: #ddd;
+    padding: 0 8px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+/* 자동줄바꿈없애기↓ */
+/* .noticeTable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+.noticeTable {
+    margin-top: 20px;
+}
+
+.noticeTable col:nth-child(1) {
+    width: 5%;
+}
+
+.noticeTable col:nth-child(2) {
+    width: auto;
+}
+
+.noticeTable col:nth-child(3) {
+    width: 13%;
+}
+
+.noticeTable col:nth-child(4) {
+    width: 13%;
+}
+
+.noticeTable col:nth-child(5) {
+    width: 5%;
+}
+
+.noticeTable table {
+    border: none;
+    font-size: 14px
+}
+
+.noticeTable th,
+.noticeTable td {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+}
+
+.noticeTable tbody td:nth-child(1),
+.noticeTable tbody td:nth-child(3),
+.noticeTable tbody td:nth-child(4),
+.noticeTable tbody td:nth-child(5) {
+    text-align: center;
+}
+
+.noticeTable th {
+    background: #f2f2f2;
+    border-top: 1px solid #333;
+}
+
+.noticeTable tbody tr:hover {
+    background: #f2f2f2;
+}
+
+/* 게시판 페이지번호 */
+.noticePage .numlist {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px
+}
+
+.noticePage .numlist span {
+    background: #ddd;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+.noticePage .numlist a {
+    display: inline-block;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+}
+
+.noticePage .numlist a:hover {
+    background: #ddd;
+}
+
+.noticePage .numlist a.on {
+    background: #ddd
+}
