@@ -18,7 +18,18 @@
     padding: 20px 10px;
 }
 
-#header.on {
+.scrolling-bar {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    z-index: 999999999;
+    width: 0%;
+    height: 3px;
+    background-color: #b81c50;
+    opacity: 0;
+}
+
+/* #header.on {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -29,7 +40,7 @@
     padding: 20px 10px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999999999;
-}
+} */
 
 #header .logo {
     margin-bottom: 60px;
@@ -54,7 +65,7 @@
 #header .depth1>li {
     display: inline-block;
     padding-bottom: 10px;
-    position:relative; 
+    position: relative;
 }
 
 
@@ -84,11 +95,11 @@
 
 #header .depth1 .depth2 {
     display: none;
-    position:absolute; 
-    top:100%;
-    left:-30px; 
-    z-index:99999999;
-    text-align:center; 
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    z-index: 99999999;
+    text-align: center;
 }
 
 
