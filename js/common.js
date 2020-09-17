@@ -47,9 +47,8 @@
   //   }
   // });
   var scollSize = $(document).height() - $(window).height();
-  var delayBar;
-  var sct = $(window).scrollTop()
   $(window).on('scroll', function () {
+    var sct = $(window).scrollTop()
     $('.scrolling-bar').css({
       'z-index': '9999999999999999',
       'opacity': '1',
