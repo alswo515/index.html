@@ -20,9 +20,9 @@
 
 .scrolling-bar {
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: 0;
-    z-index: 999999999;
+    z-index: 999999999999;
     width: 0%;
     height: 3px;
     background-color: #b81c50;
@@ -249,14 +249,14 @@
     padding-bottom: 18px;
 }
 
-#footer .link ul {
+#footer .link a {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
     padding-top: 36px;
 }
 
-#footer .link li>a {
-    display: inline-block;
-    padding: 8px 0;
-}
+
 
 
 

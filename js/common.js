@@ -46,20 +46,43 @@
   //     }, 400, )
   //   }
   // });
-  var scollSize = $(document).height() - $(window).height();
-  $(window).on('scroll', function () {
-    var sct = $(window).scrollTop()
-    $('.scrolling-bar').css({
-      'z-index': '9999999999999999',
-      'opacity': '1',
-      'width': (($(window).scrollTop() / scollSize) * 100) + '%',
+  var scollSize = $(document).height() - $('#header').height() - $(window).height();
+  var flag = true;
+  $(window).on("scroll", function () {
+    //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
+    var sct = $(this).scrollTop();
+    var wid = (sct / scollSize) * 100 + '%';
+    $(".scrolling-bar").css({
+      zIndex: 99999999999999999999999,
+      opacity: "1",
+      width: wid
     });
-    if (sct >= 178) {
-      $('#header').css({
-        'position': fixed
-      })
+    //스크롤탑값에 따라 헤더구역 고정시키기
+    if (sct >= 178 && flag) {
+      $("#header").css({
+        position: 'fixed',
+        opacity: '0',
+        height: '0px',
+        backgroundColor: 'rgba(255,255,255,0.9)'
+      }).stop().animate({
+        height: '178px',
+        opacity: '1'
+      }, 500)
+      flag = false;
+    } else if (sct === 0 && !flag) {
+      $("#header").css({
+        position: 'relative',
+        height: '0',
+        opacity: '0'
+      }).stop().animate({
+        opacity: '1',
+        height: '178px',
+        backgroundColor: 'rgba(255,255,255,0.9)'
+      }, 500)
+      flag = true;
     }
   });
+
 
 
 
