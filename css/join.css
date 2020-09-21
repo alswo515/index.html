@@ -2,9 +2,6 @@
 @import "common.css";
 @import "reset (1).css";
 
-#join_section {
-    padding-top: 178px;
-}
 
 #join_section .join>h3 {
     margin: 10px 0 50px;
