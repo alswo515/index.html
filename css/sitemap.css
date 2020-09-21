@@ -19,7 +19,7 @@
     width: calc(100% - 200px);
 }
 
-.sitemapPage .depth1>li {
+.sitemapPage .depth2>li {
     float: left;
     width: 25%;
     height: 200px;
