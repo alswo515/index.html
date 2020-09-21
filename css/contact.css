@@ -1,3 +1,7 @@
 @charset "utf-8";
 @import "common.css";
 @import "reset (1).css";
+
+#contact_section {
+    padding-top: 178px;
+}
