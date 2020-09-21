@@ -176,6 +176,68 @@
     animation-delay: 1.5s;
 }
 
+.article2 .article2_galleryPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    /* 50%네방향을 고정시키면 값이 아예없어지는 값과 같다 */
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    z-index: 9999999999999999999999;
+    transition: all 0.5s;
+}
+
+.article2 .article2_galleryPopup.on {
+    opacity: 1;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    overflow: visible;
+}
+
+.article2 .article2_galleryPopup .popupList {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    right: 35%;
+    /* 화면해상도에 따라 닫기 버튼이 안보여질수 있기때문에 조정한다 */
+    transform: translateY(-50%);
+    /* transform: translate(-50%,-50%); */
+    /* width: 30%; */
+    text-align: center;
+}
+
+.article2 .article2_galleryPopup .popupList .close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 40px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+
+.article2 .article2_galleryPopup .popupList .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+
+.article2 .article2_galleryPopup .popupList .prev {
+    left: -40px;
+}
+
+.article2 .article2_galleryPopup .popupList .next {
+    right: -40px;
+}
+
 #section .article3_tit {
     color: #7c7c7c;
     margin: 11.2px 0 28px;
