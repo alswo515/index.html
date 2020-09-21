@@ -31,7 +31,6 @@
     var alt
     var lieq
     $('.article2 > .article2li > a').on('click', function (e) {
-
         e.preventDefault();
         lieq = $(this).parent().index()
         $('.article2_Popup').addClass('on')

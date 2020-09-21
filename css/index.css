@@ -182,7 +182,6 @@
     left: 50%;
     right: 50%;
     bottom: 50%;
-    /* 50%네방향을 고정시키면 값이 아예없어지는 값과 같다 */
     background: rgba(0, 0, 0, 0.8);
     opacity: 0;
     z-index: 9999999999999999999999;
@@ -203,10 +202,7 @@
     top: 50%;
     left: 35%;
     right: 35%;
-    /* 화면해상도에 따라 닫기 버튼이 안보여질수 있기때문에 조정한다 */
     transform: translateY(-50%);
-    /* transform: translate(-50%,-50%); */
-    /* width: 30%; */
     text-align: center;
 }
 

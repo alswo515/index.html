@@ -87,7 +87,7 @@
       width: wid
     });
     //스크롤탑값에 따라 헤더구역 고정시키기
-    if (sct >= 178 && flag) {
+    if (sct >= 150 && flag) {
       $("#header").css({
         position: 'fixed',
         opacity: '0',
@@ -95,7 +95,7 @@
         backgroundColor: 'rgba(255,255,255,0.9)',
         zIndex: '9999999'
       }).stop().animate({
-        height: '178px',
+        height: '150px',
         opacity: '1'
       }, 500)
       flag = false;
@@ -104,10 +104,10 @@
         position: 'relative',
         height: '0',
         opacity: '0',
-        paddingBottom: '178px'
+        paddingBottom: '150px'
       }).stop().animate({
         opacity: '1',
-        height: '178px',
+        height: '150px',
         backgroundColor: 'rgba(255,255,255,0.9)'
       }, 500)
       flag = true;
