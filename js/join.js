@@ -7,7 +7,7 @@
 
     $('#joinform').submit(function () { // submit 이벤트는 폼에서 발생함
 
-        // 아이디 유효성 체크 : 글자수는 3~5, 특수문자제외
+        // 아이디 유효성 체크 : 글자수는 4~16, 특수문자제외
         var idtxt = $('#id_enter').val() // tsalt
         if (idtxt.length >= 4 && idtxt.length <= 16) {
             for (var i = 0; i < idtxt.length; i++) {
@@ -60,6 +60,20 @@
             return false
         }
 
+        // 도메인타입 유효성 체크
+        var domain = $('#domain').val()
+        var domainchk = /^[a-zA-Z0-9]+[\.][a-z]+$/
+        if (domain.length === 0) {
+            alert('도메인을 선택해 주세요.')
+            $('#domainType').focus()
+            return false
+        } else {
+            if (!domainchk.test(domain)) {
+                alert('형식에 맞지 않습니다.')
+                $('#domainType').focus()
+                return false
+            }
+        }
 
         //비밀번호 유효성 체크  : 첫글짜는 대소문자만,반드시 숫자와 특수문자를 1개이상 조합해서  10~12글자 범위
 
@@ -141,6 +155,15 @@
             $('#sellp03').select()
             return false
         }
+
+
+        bool01 = $('#tou_2').prop('checked')
+        bool02 = $('#tou_3').prop('checked')
+        if (bool01 === false && bool02 === false) {
+            alert('필수약관에 동의버튼을 눌러주셔야합니다')
+            return false
+        }
+
         return false // 유효성 체크후에는 제거할 것
     })
 
@@ -164,9 +187,25 @@
 
     // 스킬에서 전부체크 체크 여부에 따라 나머지 체크박스들을 동일하게 제어하기
     //prop ('checked') : 체크여부 파악 값이 true , false  checked 이면 true, checked안돼있으면 false
-    $('input:checkbox').on('click', function () {
+    $('#tou_1').on('click', function () {
         var bool = $(this).prop('checked')
-        $('.skill > input:checkbox').prop('checked', bool)
+        $('input:checkbox').prop('checked', bool)
+    })
+
+    // 이메일 도메인 선택을 변경(change())했을때 변경한 내용으로 채우기
+    $('#domainType').on('change', function () {
+        $('#domainType option:selected').each(function () {
+            if ($(this).val() === 'title') {
+                $('#domain').val('')
+                $('#domain').attr('disabled', true)
+            } else if ($(this).val() === 'self') {
+                $('#domain').val('')
+                $('#domain').attr('disabled', false)
+            } else {
+                $('#domain').val($(this).val())
+                $('#domain').attr('disabled', true)
+            }
+        })
     })
 
 })(jQuery)
