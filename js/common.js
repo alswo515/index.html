@@ -63,7 +63,8 @@
         position: 'fixed',
         opacity: '0',
         height: '0px',
-        backgroundColor: 'rgba(255,255,255,0.9)'
+        backgroundColor: 'rgba(255,255,255,0.9)',
+        zIndex: '9999999'
       }).stop().animate({
         height: '178px',
         opacity: '1'
