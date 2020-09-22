@@ -7,4 +7,5 @@
             $('.project_3').addClass('blind')
         }
     )
+
 })(jQuery)

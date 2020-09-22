@@ -1,5 +1,10 @@
 @import "reset (1).css";
 
+html,
+body {
+    overflow-x: hidden
+}
+
 .row {
     max-width: 1361px;
     margin: 0 auto;
@@ -9,12 +14,8 @@
 
 #header {
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    height: 150px;
+    height: 100px;
     padding: 20px 10px;
 }
 

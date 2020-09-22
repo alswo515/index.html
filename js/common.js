@@ -1,4 +1,5 @@
 (function ($) {
+  var sct = 0;
 
   //화면 처음 들어갔을떄 스핀 로딩화면
   // $(window).load(function () {
@@ -33,19 +34,8 @@
       $(this).find(".depth2").stop().slideUp(500)
     }
   );
-  var sct = 0;
   $(window).scroll(function () {
-    sct = $(this).scrollTop();
-    //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기
-    if (sct >= 100) {
-      $('.gotop').addClass('on').stop().animate({
-        opacity: '1'
-      }, 500)
-    } else {
-      $('.gotop').removeClass('on').stop().animate({
-        opacity: '0'
-      }, 500)
-    }
+
   });
 
   $('.gotop').on('click', function () {
@@ -74,19 +64,19 @@
   //     }, 400, )
   //   }
   // });
-  var scollSize = $(document).height() - $('#header').height() - $(window).height();
   var flag = true;
   $(window).on("scroll", function () {
+    var scollSize = $(document).height() - $('#header').height() - $(window).height();
     //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
-    var sct = $(this).scrollTop();
+    sct = $(this).scrollTop();
     var wid = (sct / scollSize) * 100 + '%';
     $(".scrolling-bar").css({
-      // zIndex: 99999999999999999999999,
+      zIndex: 99999999999999999999999,
       opacity: 1,
       width: wid
     });
     //스크롤탑값에 따라 헤더구역 고정시키기
-    if (sct >= 150 && flag) {
+    if (sct >= 100 && flag) {
       $("#header").css({
         position: 'fixed',
         opacity: '0',
@@ -94,7 +84,7 @@
         backgroundColor: 'rgba(255,255,255,0.9)',
         zIndex: '9999999'
       }).stop().animate({
-        height: '150px',
+        height: '100px',
         opacity: '1'
       }, 500)
       flag = false;
@@ -103,13 +93,24 @@
         position: 'relative',
         height: '0',
         opacity: '0',
-        paddingBottom: '150px'
+        paddingBottom: '100px'
       }).stop().animate({
         opacity: '1',
-        height: '150px',
+        height: '100px',
         backgroundColor: 'rgba(255,255,255,0.9)'
       }, 500)
       flag = true;
+    }
+
+    //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기 g
+    if (sct >= 100) {
+      $('.gotop').addClass('on').stop().animate({
+        opacity: '1'
+      }, 500)
+    } else {
+      $('.gotop').removeClass('on').stop().animate({
+        opacity: '0'
+      }, 500)
     }
   });
 
@@ -125,6 +126,7 @@
     $("#kimContainer").remove();
     $("#containerBox").load(url);
   });
+
   //푸터구역 사이트맵 로드 메소드
   $("#footer .link > a").on("click", function (e) {
     e.preventDefault();
@@ -160,11 +162,27 @@
   //서브페이지 스크롤 이벤트
   sct = $(window).scrollTop()
 
+  // var projectLoding = setInterval(project_click, 1000)
+  // var p = 1
+  // $('li.project').on('click',
+  //   function project_click() {
+  //     (function () {
+  //       p--;
+  //       $('.project_1').addClass('on')
+  //       if (k === 0) {
+  //         clearInterval(projectLoding)
+  //         return false
+  //       }
+  //     })
+  //   })
+
+
+
 
   $(window).scroll(function () {
     if ($("#kimContainer").children().is("#project_section")) {
       projectScroll();
-      $('.project_1').addClass('on')
+      // $('.project_1').addClass('on')
     }
     if ($("#kimContainer").children().is("#section")) {
       sectionScroll();

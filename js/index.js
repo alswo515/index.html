@@ -10,7 +10,7 @@
     //     $('.article6').removeClass('blind')
     //     $('.article7').removeClass('blind')
     // })
-
+    //아티클밑에 버튼 클릭시 숨겨져있던 아티클이 나오게하는 이벤트
     $(".older_posts a").toggle(
         function () {
             $('.article5').removeClass('blind')
