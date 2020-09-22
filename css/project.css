@@ -90,14 +90,6 @@
     opacity: 0.7;
 }
 
-#project_section .project_tit {
-    color: #7c7c7c;
-    margin: 11.2px 0 28px;
-    font-size: 28px;
-    font-family: 'Lora', sans-serif;
-    font-weight: 100;
-}
-
 .project_2 {
     margin-bottom: 40px;
 }
@@ -145,5 +137,62 @@
 }
 
 .project_2.on .projectli:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+/* -------------project3 */
+#project_section .project_3 a {
+    transition: all 1s;
+}
+
+#project_section .project_3 a:hover {
+    opacity: 0.7;
+}
+
+.project_3 {
+    margin-bottom: 40px;
+}
+
+/* -------------메인메뉴 이미지 포지션테그들------- */
+.project_3>.projectli {
+    float: left;
+    width: 33.33333%;
+}
+
+.project_3>.projectli>a {
+    height: 504px;
+}
+
+.project_3 img {
+    width: 100%;
+}
+
+.project_3>.projectli {
+    padding: 0 17.4129px;
+}
+
+.project_3 .projectli {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.project_3 {
+    overflow: hidden;
+}
+
+.project_3.on .projectli {
+    animation: fadeInUp 1s both 0s;
+}
+
+.project_3.on .projectli:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.project_3.on .projectli:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.project_3.on .projectli:nth-child(4) {
     animation-delay: 1.5s;
 }

@@ -81,8 +81,8 @@
     var sct = $(this).scrollTop();
     var wid = (sct / scollSize) * 100 + '%';
     $(".scrolling-bar").css({
-      zIndex: 99999999999999999999999,
-      opacity: "1",
+      // zIndex: 99999999999999999999999,
+      opacity: 1,
       width: wid
     });
     //스크롤탑값에 따라 헤더구역 고정시키기
@@ -164,6 +164,7 @@
   $(window).scroll(function () {
     if ($("#kimContainer").children().is("#project_section")) {
       projectScroll();
+      $('.project_1').addClass('on')
     }
     if ($("#kimContainer").children().is("#section")) {
       sectionScroll();
@@ -173,23 +174,17 @@
 
   function projectScroll() {
     sct = $(this).scrollTop()
-    var project = $('.project_1').offset().top - $(this).height() / 2
     var project2 = $('.project_2').offset().top - $(this).height() / 2
-    var projectTit = $('.project_tit').offset().top - $(this).height() / 2
-    if (sct >= projectTit) {
-      $(".project_tit").addClass("on");
-    } else if (sct === 0) {
-      $(".project_tit").removeClass("on");
-    }
-    if (sct >= project) {
-      $(".project_1").addClass("on");
-    } else if (sct === 0) {
-      $(".project_1").removeClass("on");
-    }
+    var project3 = $('.project_3').offset().top - $(this).height() / 2
     if (sct >= project2) {
       $(".project_2").addClass("on");
     } else if (sct === 0) {
       $(".project_2").removeClass("on");
+    }
+    if (sct >= project3) {
+      $(".project_3").addClass("on");
+    } else if (sct === 0) {
+      $(".project_3").removeClass("on");
     }
   }
 
