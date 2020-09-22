@@ -1,32 +1,18 @@
 @charset "utf-8";
 @import "reset (1).css";
-@import "common.css";
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 
-
-
-#project_section .project a {
+#project_section .project_1 a {
     transition: all 1s;
 }
 
-#project_section .project a:hover {
+#project_section .project_1 a:hover {
     opacity: 0.7;
 }
-
-
-
-/* -----------이미지마우스 커서올렸을때 호버효과들----------- */
-
-
-
-
-/* 플롯 정렬을 할때는 li값에 width값을 주고 이미지에 100%를 주면 이미지는 다보이면서 한줄정렬할수 있다 하지만 li 안에 구성요소에 높이값을 줘야한다 */
-
-
 
 #project_section .project_tit {
     color: #7c7c7c;
@@ -36,29 +22,30 @@
     font-weight: 100;
 }
 
-.project {
+.project_1 {
     margin-bottom: 40px;
 }
 
-.project>.projectli {
+/* -------------메인메뉴 이미지 포지션테그들------- */
+.project_1>.projectli {
     float: left;
     width: 33.33333%;
 }
 
-.project>.projectli>a {
+.project_1>.projectli>a {
     height: 504px;
 }
 
-.project img {
+.project_1 img {
     width: 100%;
 }
 
 
-.project>.projectli {
+.project_1>.projectli {
     padding: 0 17.4129px;
 }
 
-.project .projectli {
+.project_1 .projectli {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
@@ -74,135 +61,89 @@
     animation: fadeInRight 1s both 0s;
 }
 
-.project {
+.project_1 {
     overflow: hidden;
 }
 
-.project.on .projectli {
+.project_1.on .projectli {
     animation: fadeInUp 1s both 0s;
 }
 
-.project.on .projectli:nth-child(2) {
+.project_1.on .projectli:nth-child(2) {
     animation-delay: 0.5s;
 }
 
-.project.on .projectli:nth-child(3) {
+.project_1.on .projectli:nth-child(3) {
     animation-delay: 1s;
 }
 
-.project.on .projectli:nth-child(4) {
+.project_1.on .projectli:nth-child(4) {
     animation-delay: 1.5s;
 }
 
+/* ------------------project2 */
+#project_section .project_2 a {
+    transition: all 1s;
+}
+
+#project_section .project_2 a:hover {
+    opacity: 0.7;
+}
+
+#project_section .project_tit {
+    color: #7c7c7c;
+    margin: 11.2px 0 28px;
+    font-size: 28px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 100;
+}
+
+.project_2 {
+    margin-bottom: 40px;
+}
+
 /* -------------메인메뉴 이미지 포지션테그들------- */
+.project_2>.projectli {
+    float: left;
+    width: 33.33333%;
+}
 
+.project_2>.projectli>a {
+    height: 504px;
+}
 
-
-
-
-
-/* -------------버튼클릭시 나타날 이미지들 스타일------- */
-
-
-
-
-.project_section {
-    text-align: left;
-    padding: 0 15px;
-    margin-top: 40px;
+.project_2 img {
+    width: 100%;
 }
 
 
-
-.project_section span:first-child {
-    transition: all 1s;
+.project_2>.projectli {
+    padding: 0 17.4129px;
 }
 
-.project_section span:first-child:hover {
-    color: #95afb5
-}
-
-
-.project_section span {
-    margin-bottom: 8px;
-    color: #7c7c7c;
-    display: block;
-    font-size: 16px;
-    font-family: 'Lora', serif;
-}
-
-.project_section h3 {
-    margin-bottom: 12.6px;
-    color: #7c7c7c;
-    font-size: 33px;
-    font-family: 'Viaoda Libre', cursive;
-    letter-spacing: 3px;
-    transition: 1s all;
-}
-
-.project_section h3:hover {
-    color: #95afb5
-}
-
-.project_section span:last-child {
-    position: relative;
-    padding-bottom: 30px;
-}
-
-.project_section span:last-child:before {
-    content: '';
-    background-color: #7c7c7c;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 2px;
-}
-
-
-
-
-.older_posts {
-    padding: 40px 0 80px;
-    text-align: center;
-    height: 19.5px;
-}
-
-.older_posts a {
-    background: #e9f1f2;
-    border: solid 1px #fff;
-    padding: 15px 20px;
-    transition: all 1s;
-}
-
-.older_posts a:hover {
-    background-color: #fff;
-    border: solid 1px #ccc;
-}
-
-.older_posts span {
-    font-size: 13px;
-    color: #7c7c7c;
-    display: inline-block;
-    padding: 19.5px 52px;
-}
-
-
-
-.gotop {
-    display: block;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 999999999999;
+.project_2 .projectli {
     opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
 }
 
-.gotop.on {
-    display: block;
+
+.project_2 {
+    overflow: hidden;
 }
 
-.gotop img {
-    width: 70px;
-    cursor: pointer;
+.project_2.on .projectli {
+    animation: fadeInUp 1s both 0s;
+}
+
+.project_2.on .projectli:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.project_2.on .projectli:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.project_2.on .projectli:nth-child(4) {
+    animation-delay: 1.5s;
 }
