@@ -65,8 +65,8 @@
   //   }
   // });
   var flag = true;
+  //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
   $(window).on("scroll", function () {
-    //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
     var scollSize = $(document).height() - $('#header').height() - $(window).height();
     sct = $(this).scrollTop();
     var wid = (sct / scollSize) * 100 + '%';
