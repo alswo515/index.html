@@ -55,6 +55,14 @@ body {
     padding-top: 10px;
 }
 
+#header .open_nav {
+    display: none
+}
+
+#header .close_nav {
+    display: none
+}
+
 #header .depth1 {
     display: inline-block;
     margin-top: 10px;
