@@ -38,6 +38,27 @@
 
   });
 
+  //햄버거 클릭시 네비박스 나타나기
+  $('#header .open_nav').on('click', function () {
+    $(this).next().stop().slideDown(300)
+    $(this).hide()
+    $(this).nextAll('.close_nav').css({
+      display: 'block'
+    })
+  })
+  //닫기버튼 클릭시 네비박스 사라지기
+  $('#header .close_nav').on('click', function () {
+    $(this).prev().stop().slideUp(300)
+    $('depth2').hide()
+    $(this).hide()
+    $(this).prevAll('.open_nav').css({
+      display: 'block'
+    })
+    $('.depth2').hide()
+    $('#header .nav .depth1>li').removeClass('on')
+  })
+
+
   $('.gotop').on('click', function () {
     $('body, html').stop().animate({
       scrollTop: 0
