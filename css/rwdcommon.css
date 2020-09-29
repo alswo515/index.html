@@ -146,7 +146,7 @@
 
 @media screen and (max-width: 767px) {
     #header .nav {
-        position: relative;
+        position: fixed;
         height: 76px;
     }
 
@@ -186,14 +186,14 @@
     #header .open_nav {
         display: block;
         position: absolute;
-        top: 25px;
+        top: 50px;
         right: 10px;
         font-size: 20px;
     }
 
     #header .close_nav {
         position: absolute;
-        top: 25px;
+        top: 50px;
         right: 10px;
         font-size: 20px;
         display: none;
