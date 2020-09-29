@@ -118,6 +118,7 @@
 
 @media screen and (max-width: 1000px) {
     #header .nav {
+        float: none;
         position: absolute;
         width: 90%;
         bottom: 0;
@@ -129,6 +130,7 @@
 
 @media screen and (max-width: 965px) {
     #header .nav {
+        float: none;
         position: absolute;
         width: 90%;
         bottom: 0;
@@ -146,6 +148,7 @@
 
 @media screen and (max-width: 767px) {
     #header .nav {
+        float: none;
         position: fixed;
         height: 76px;
     }
