@@ -57,7 +57,7 @@
   });
 
   //햄버거 클릭시 네비박스 나타나기
-  $(".logo_nav .open_nav").on("click", function () {
+  $("#header .open_nav").on("click", function () {
     $(this).next().stop().slideDown(300);
     $(this).hide();
     $(this).nextAll(".close_nav").css({
@@ -65,7 +65,7 @@
     });
   });
   //닫기버튼 클릭시 네비박스 사라지기
-  $(".logo_nav .close_nav").on("click", function () {
+  $("#header .close_nav").on("click", function () {
     $(this).prev().stop().slideUp(300);
     $("depth2").hide();
     $(this).hide();
