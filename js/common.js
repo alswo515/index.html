@@ -36,26 +36,43 @@
   $(window).scroll(function () {});
 
   //윈도우 리사이즈 이벤트 반응형
-  init();
-
-  var flag = true;
+  init()
 
   function init() {
-    var ww = $(window).width();
-    if (ww > 767 && flag) {
-      $(".nav").show();
-      $(".open_nav, .close_nav, .depth2").hide();
-      flag = false;
+    var ww = $(window).width()
+    if (ww >= 767 && flag) {
+      $('.nav').show()
+      $('.open_nav, .close_nav, .depth2').hide()
+      $('html').addClass('pc').removeClass('mobile');
     } else if (ww <= 767 && !flag) {
-      $(".open_nav").show();
-      $(".nav, .depth2").hide();
-      flag = true;
+      $('.open_nav').show()
+      $('.nav, .depth2').hide()
+      $('html').addClass('mobile').removeClass('pc')
     }
   }
 
-  $(window).on("resize", function () {
-    init();
-  });
+  init()
+
+  function init() {
+    var ww = $(window).width()
+    if (ww >= 767 && flag) {
+      $('.nav').show()
+      $('.depth1>li').removeClass('on')
+      $('.open_nav, .close_nav, .depth2').hide()
+      $('html').addClass('pc').removeClass('mobile');
+      flag = false
+    } else if (ww <= 767 && !flag) {
+      $('.open_nav').show()
+      $('.nav, .depth2').hide()
+      $('html').addClass('mobile').removeClass('pc')
+      flag = true
+    }
+  }
+  var flag = true;
+
+  $(window).on('resize', function () {
+    init()
+  })
 
   //햄버거 클릭시 네비박스 나타나기
   $("#header .open_nav").on("click", function () {
