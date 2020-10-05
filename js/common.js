@@ -36,43 +36,48 @@
   $(window).scroll(function () {});
 
   //윈도우 리사이즈 이벤트 반응형
-  init()
+  init();
 
+  if ($(window).width() > 767) {
+    $(".open_nav, .close_nav").css({
+      display: "none",
+    });
+  }
   function init() {
-    var ww = $(window).width()
+    var ww = $(window).width();
     if (ww >= 767 && flag) {
-      $('.nav').show()
-      $('.open_nav, .close_nav, .depth2').hide()
-      $('html').addClass('pc').removeClass('mobile');
+      $(".nav").show();
+      $(".open_nav, .close_nav, .depth2").hide();
+      $("html").addClass("pc").removeClass("mobile");
     } else if (ww <= 767 && !flag) {
-      $('.open_nav').show()
-      $('.nav, .depth2').hide()
-      $('html').addClass('mobile').removeClass('pc')
+      $(".open_nav").show();
+      $(".nav, .depth2").hide();
+      $("html").addClass("mobile").removeClass("pc");
     }
   }
 
-  init()
+  init();
 
   function init() {
-    var ww = $(window).width()
+    var ww = $(window).width();
     if (ww >= 767 && flag) {
-      $('.nav').show()
-      $('.depth1>li').removeClass('on')
-      $('.open_nav, .close_nav, .depth2').hide()
-      $('html').addClass('pc').removeClass('mobile');
-      flag = false
+      $(".nav").show();
+      $(".depth1>li").removeClass("on");
+      $(".open_nav, .close_nav, .depth2").hide();
+      $("html").addClass("pc").removeClass("mobile");
+      flag = false;
     } else if (ww <= 767 && !flag) {
-      $('.open_nav').show()
-      $('.nav, .depth2').hide()
-      $('html').addClass('mobile').removeClass('pc')
-      flag = true
+      $(".open_nav").show();
+      $(".nav, .depth2").hide();
+      $("html").addClass("mobile").removeClass("pc");
+      flag = true;
     }
   }
   var flag = true;
 
-  $(window).on('resize', function () {
-    init()
-  })
+  $(window).on("resize", function () {
+    init();
+  });
 
   //햄버거 클릭시 네비박스 나타나기
   $("#header .open_nav").on("click", function () {
@@ -94,7 +99,8 @@
   });
 
   $(".gotop").on("click", function () {
-    $("body, html").stop().animate({
+    $("body, html").stop().animate(
+      {
         scrollTop: 0,
       },
       100,
@@ -145,7 +151,8 @@
           zIndex: "9999999",
         })
         .stop()
-        .animate({
+        .animate(
+          {
             height: "100px",
             opacity: "1",
           },
@@ -161,7 +168,8 @@
           paddingBottom: "100px",
         })
         .stop()
-        .animate({
+        .animate(
+          {
             opacity: "1",
             height: "100px",
             backgroundColor: "rgba(255,255,255,0.9)",
@@ -173,13 +181,15 @@
 
     //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기 g
     if (sct >= 100) {
-      $(".gotop").addClass("on").stop().animate({
+      $(".gotop").addClass("on").stop().animate(
+        {
           opacity: "1",
         },
         500
       );
     } else {
-      $(".gotop").removeClass("on").stop().animate({
+      $(".gotop").removeClass("on").stop().animate(
+        {
           opacity: "0",
         },
         500
