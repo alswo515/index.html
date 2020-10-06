@@ -84,6 +84,87 @@
         margin: 0 5px;
         position: relative
     }
+
+    /* 메인페이지 아티클구역 */
+    /* 아티클2 */
+    .article2>.article2li {
+        float: left;
+        width: 100%;
+    }
+
+    .article2>.article2li img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .article2>.article2li .section_content {
+        float: left;
+        width: 50%;
+    }
+
+    /* 아티클3 */
+    .article3>.article3li {
+        float: left;
+        width: 100%;
+    }
+
+    .article3 .article3li img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .article3>.article3li .section_content {
+        float: left;
+        width: 50%;
+    }
+
+    /* 아티클4 */
+    .article4>.article4li {
+        float: left;
+        width: 100%;
+    }
+
+    .article4 .article4li img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .article4>.article4li .section_content {
+        float: left;
+        width: 50%;
+    }
+
+    /* 아티클5 */
+    .article5>.article5li {
+        float: left;
+        width: 100%;
+    }
+
+    .article5 .article5li img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .article5>.article5li .section_content {
+        float: left;
+        width: 50%;
+    }
+
+    /* 아티클6 */
+    .article6>.article6li {
+        float: left;
+        width: 100%;
+    }
+
+    .article6 .article6li img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .article6>.article6li .section_content {
+        float: left;
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 520px) {
