@@ -24,8 +24,8 @@
     //   color: colorCode[k]
     // });
   }
-
-  $(".depth1 > li").hover(
+  //depth1 클릭시 depth2 보이게
+  $(".depth1 > li:nth-child(5) a").hover(
     function () {
       $(this).find(".depth2").stop().slideDown(500);
     },
@@ -33,47 +33,36 @@
       $(this).find(".depth2").stop().slideUp(500);
     }
   );
-  $(window).scroll(function () {});
 
   //윈도우 리사이즈 이벤트 반응형
   init();
 
-  if ($(window).width() > 767) {
+  if ($(window).width() >= 767) {
     $(".open_nav, .close_nav").css({
       display: "none",
     });
   }
-  function init() {
-    var ww = $(window).width();
-    if (ww >= 767 && flag) {
-      $(".nav").show();
-      $(".open_nav, .close_nav, .depth2").hide();
-      $("html").addClass("pc").removeClass("mobile");
-    } else if (ww <= 767 && !flag) {
-      $(".open_nav").show();
-      $(".nav, .depth2").hide();
-      $("html").addClass("mobile").removeClass("pc");
-    }
-  }
-
-  init();
-
-  function init() {
-    var ww = $(window).width();
-    if (ww >= 767 && flag) {
-      $(".nav").show();
-      $(".depth1>li").removeClass("on");
-      $(".open_nav, .close_nav, .depth2").hide();
-      $("html").addClass("pc").removeClass("mobile");
-      flag = false;
-    } else if (ww <= 767 && !flag) {
-      $(".open_nav").show();
-      $(".nav, .depth2").hide();
-      $("html").addClass("mobile").removeClass("pc");
-      flag = true;
-    }
-  }
   var flag = true;
+
+  function init() {
+    var ww = $(window).innerWidth();
+    if (ww > 767) {
+      $("html").addClass("pc").removeClass("mobile");
+      if (flag) {
+        $(".logoNav .nav").show();
+        $(".depth1 > li").removeClass("on");
+        $(".open_nav, .close_nav, .depth2").hide();
+        flag = false;
+      }
+    } else if (ww <= 767) {
+      $("html").addClass("mobile").removeClass("pc");
+      if (!flag) {
+        $(".open_nav").show();
+        $(".logoNav .nav, .depth2").hide();
+        flag = true;
+      }
+    }
+  }
 
   $(window).on("resize", function () {
     init();

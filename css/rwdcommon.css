@@ -115,6 +115,25 @@
         top: 50px;
         text-align: center;
     }
+
+    #footer .help {
+        float: left;
+        padding: 0 64px 64px;
+        width: 100%;
+    }
+
+    #footer .link {
+        float: left;
+        padding: 0 64px 64px;
+        width: 100%;
+    }
+
+    #footer .site_search {
+        float: right;
+        padding: 0 64px 64px;
+        width: 100%;
+    }
+
 }
 
 
@@ -139,6 +158,7 @@
         text-align: center;
         display: none;
         z-index: 9999999999;
+        background: #ddd;
     }
 
 
@@ -147,7 +167,7 @@
         position: static;
         top: 100%;
         right: 0;
-        background: #fff;
+        background: #ddd;
         padding: 20px 0;
         display: block;
     }
@@ -159,7 +179,13 @@
     #header .nav .depth1>li>a {
         padding: 10px 20px 10px 30px;
         display: block;
-        text-align: right;
+        text-align: left;
+    }
+
+    #header .depth1>li:nth-child(5):after {
+        content: '\f0d7';
+        font-weight: 900;
+        font-family: 'font awesome 5 free';
     }
 
     #header .depth1>li:nth-child(5) .depth2 {
@@ -167,11 +193,11 @@
         top: 85%;
         left: 0;
         width: 100%;
-        background: #fff;
+        background: #ddd;
         border-radius: 0px;
         padding: 0 40px;
         box-shadow: 0px 0px 0px #ddd;
-        text-align: right;
+        text-align: left;
         display: none
     }
 

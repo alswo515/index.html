@@ -14,6 +14,12 @@ $(".visualRoll").slick({
     arrows: false,
     prevArrow: '<button class="prevArrow  marrow"><i class="fas fa-angle-left"></i></button>',
     nextArrow: '<button class="nextArrow  marrow"><i class="fas fa-angle-right"></i></button>',
+    responsive: [{
+        breakpoint: 1025, //1px 작게 즉. 1024px부터 작동됨
+        settings: {
+            arrows: false
+        }
+    }]
 })
 
 $(".main_rolling_pc  .plpa").on("click", function () {

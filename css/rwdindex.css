@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1160px) {
+    #section {
+        padding: 20px;
+    }
+
+    .main_rolling_pc {
+        position: relative
+    }
+}
+
+@media screen and (max-width: 1077px) {
+    .main_rolling_pc .slide {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        background-position: center;
+        position: relative
+    }
+}
+
+@media screen and (max-width: 965px) {}
+
+@media screen and (max-width: 767px) {
+
+
+    .enrty_content {
+        width: 50%;
+        float: left;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+    }
+
+    .enrty_content h2 {
+        display: inline-block;
+        color: #7c7c7c;
+        font-size: 30px;
+        margin-bottom: 18.2px;
+        transition: 1s all;
+        font-family: 'Dancing Script', cursive;
+        line-height: 1em;
+    }
+
+    .enrty_content span {
+        display: block;
+        margin-bottom: 9px;
+        color: #7c7c7c;
+        font-size: 18px;
+        font-family: 'Lora', serif;
+    }
+
+    .enrty_content .time_txt:hover {
+        color: #95afb5;
+    }
+
+    .enrty_content .time_txt {
+        transition: 1s all;
+    }
+
+    .main_rolling_pc .slide {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        background-position: center;
+        position: relative
+    }
+
+    /* 슬릭도트버튼 */
+    .main_rolling_pc .slick-dots {
+        /* display: none; */
+        position: absolute;
+        bottom: 20px;
+        width: 60%;
+        text-align: right
+    }
+
+    .main_rolling_pc .slick-dots li {
+        display: inline-block;
+        width: 30px;
+        height: 5px;
+        background: #999;
+        margin: 0 5px;
+        position: relative
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .article2>.article2li {
+        float: left;
+        width: 100%;
+    }
+
+    .article3>.article3li {
+        float: left;
+        width: 100%;
+    }
+
+    .article4>.article4li {
+        float: left;
+        width: 100%;
+    }
+
+    .article5>.article5li {
+        float: left;
+        width: 100%;
+    }
+
+    .article6>.article6li {
+        float: left;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .main_rolling_pc .slide {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 240px;
+        background-position: center;
+        position: relative
+    }
+
+    .enrty_content {
+        width: 50%;
+        float: left;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+}
