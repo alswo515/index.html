@@ -55,11 +55,11 @@ body {
     padding-top: 10px;
 }
 
-#header .nav .open_nav {
+#header .open_nav {
     display: none
 }
 
-#header .nav .close_nav {
+#header .close_nav {
     display: none
 }
 

@@ -24,17 +24,27 @@
     //   color: colorCode[k]
     // });
   }
+
+
   //depth1 클릭시 depth2 보이게
   $(".depth1 > .THEMESTYLES").hover(
-    function (e) {
-      e.preventDefault()
-      $(this).find(".depth2").stop().slideDown(500);
+    function () {
+      if ($('html').hasClass('pc')) {
+        $(this).find(".depth2").stop().slideDown(500);
+      }
     },
-    function (e) {
-      e.preventDefault()
-      $(this).find(".depth2").stop().slideUp(500);
+    function () {
+      if ($('html').hasClass('pc')) {
+        $(this).find(".depth2").stop().slideUp(500);
+      }
     }
   );
+  $(".THEMESTYLES").on('click', function () {
+    if ($('html').hasClass('mobile')) {
+      $(this).next().stop().slideToggle(500);
+    }
+    return false
+  })
 
 
   //윈도우 리사이즈 이벤트 반응형
@@ -52,7 +62,7 @@
     if (ww > 767) {
       $("html").addClass("pc").removeClass("mobile");
       if (flag) {
-        $(".logoNav .nav").show();
+        $(".nav").show();
         $(".depth1 > li").removeClass("on");
         $(".open_nav, .close_nav, .depth2").hide();
         flag = false;
@@ -61,7 +71,7 @@
       $("html").addClass("mobile").removeClass("pc");
       if (!flag) {
         $(".open_nav").show();
-        $(".logoNav .nav, .depth2").hide();
+        $(".nav, .depth2").hide();
         flag = true;
       }
     }
