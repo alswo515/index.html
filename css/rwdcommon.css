@@ -182,7 +182,7 @@
         text-align: left;
     }
 
-    #header .depth1>li:nth-child(5):after {
+    #header .depth1>li:nth-child(5):after a {
         content: '\f0d7';
         font-weight: 900;
         font-family: 'font awesome 5 free';

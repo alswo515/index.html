@@ -25,14 +25,17 @@
     // });
   }
   //depth1 클릭시 depth2 보이게
-  $(".depth1 > li").hover(
-    function () {
+  $(".depth1 > .THEMESTYLES").hover(
+    function (e) {
+      e.preventDefault()
       $(this).find(".depth2").stop().slideDown(500);
     },
-    function () {
+    function (e) {
+      e.preventDefault()
       $(this).find(".depth2").stop().slideUp(500);
     }
   );
+
 
   //윈도우 리사이즈 이벤트 반응형
   init();
