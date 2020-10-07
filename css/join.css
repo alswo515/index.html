@@ -237,3 +237,71 @@
 #join_section .join_com button span {
     font-size: 12px;
 }
+
+@media screen and (max-width: 1370px) {
+    .join {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 767px) {
+
+    #join_section .join>h3 {
+        margin: 10px 0 40px;
+        font-size: 20.8px;
+        position: relative;
+        padding-bottom: 5px;
+        color: #7c7c7c;
+    }
+
+    #join_section table input {
+        padding: 2px 4px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    #join_section table tr td {
+        padding: 11px 0 10px 18px;
+    }
+
+    #join_section table td:first-child {
+        background-color: #fbfafa;
+        color: #000;
+    }
+
+    #join_section table tr td:first-child {
+        width: 100%;
+        display: block;
+    }
+
+    #join_section table tr td:last-child {
+        width: 100%;
+        display: block;
+    }
+
+    #join_section input[type=text] {
+        width: 20%;
+        margin-right: 20px;
+    }
+
+    #join_section #email {
+        margin-right: 3px;
+    }
+
+    #join_section table tr:nth-child(5) td:nth-child(2) .sell_num,
+    #join_section table tr:nth-child(5) td:nth-child(2) input {
+        width: 20%;
+        /* label테그가 셀렉트테그를 감싸고있으므로 값을변경해준다 */
+    }
+
+    #join_section .accept>h3 {
+        margin: 30px 0 40px;
+        font-size: 20.8px;
+        position: relative;
+        padding-bottom: 5px;
+        color: #7c7c7c;
+    }
+
+}
