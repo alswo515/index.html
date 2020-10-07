@@ -41,20 +41,20 @@
   );
   $(".THEMESTYLES").on('click', function () {
     if ($('html').hasClass('mobile')) {
-      $(this).next().stop().slideToggle(500);
+      $(this).find('.depth2').stop().slideToggle(500);
     }
-    return false
+    // return false
   })
 
 
   //윈도우 리사이즈 이벤트 반응형
   init();
 
-  if ($(window).width() >= 767) {
-    $(".open_nav, .close_nav").css({
-      display: "none",
-    });
-  }
+  // if ($(window).width() >= 767) {
+  //   $(".open_nav, .close_nav").css({
+  //     display: "none",
+  //   });
+  // }
   var flag = true;
 
   function init() {
@@ -129,7 +129,6 @@
   //     }, 400, )
   //   }
   // });
-  var flag = true;
   //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
   $(window).on("scroll", function () {
     var scollSize =
@@ -197,7 +196,7 @@
   //메인박스 로드메소드
   $("#containerBox").load("main.html");
 
-  $(".depth1 > li > a").on("click", function (e) {
+  $(".depth1 li a").on("click", function (e) {
     e.preventDefault();
     var url = $(this).attr("href");
     $("#kimContainer").remove();
