@@ -143,14 +143,135 @@
     display: none;
 }
 
-
-
-
-
 .id::placeholder {
     font-size: 14px;
 }
 
 .password::placeholder {
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 1160px) {}
+
+@media screen and (max-width: 1077px) {}
+
+@media screen and (max-width: 767px) {
+    .title h3 {
+        color: #7c7c7c;
+        padding-bottom: 15px;
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .title h3::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ccc;
+    }
+
+    .login {
+        /* text-align: center; */
+        border: 1px solid #ccc;
+        padding: 0px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .login fieldset {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .login .box_title {
+        padding: 30px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .login form .id {
+        width: 90%;
+        height: 38px;
+        border: 1px solid #ccc;
+        margin-bottom: 18px;
+        display: block;
+        padding: 5px;
+    }
+
+    .login form .password {
+        width: 90%;
+        height: 38px;
+        border: 1px solid #ccc;
+        margin-bottom: 18px;
+        display: block;
+        padding: 5px;
+    }
+
+    .login form button {
+        width: 100px;
+        height: 72px;
+        color: #fff;
+        background-color: #7c7c7c;
+        margin: 40px auto 20px;
+        display: block;
+        border-radius: 5px;
+        position: static;
+        bottom: 0px;
+        left: 10px;
+    }
+
+    .login .sec_acess {
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        display: block;
+        padding-right: 10px;
+    }
+
+    .login .id_save {
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        display: block;
+        padding-right: 10px;
+    }
+
+
+    .login .find {
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 0px 5px;
+    }
+
+    .login .find li {
+        display: inline-block;
+    }
+
+    .login .find li a {
+        display: inline-block;
+        padding: 0 13px 15px 13px;
+        position: relative;
+    }
+
+    .login .find li a:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        background-color: #ccc;
+        width: 1px;
+        height: 20px;
+    }
 }

@@ -221,4 +221,22 @@
         font-size: 20px;
         display: none;
     }
+
+    #footer .help {
+        float: left;
+        padding: 0 0 10px;
+        width: 100%;
+    }
+
+    #footer .link {
+        float: left;
+        padding: 0 0 10px;
+        width: 100%;
+    }
+
+    #footer .site_search {
+        float: right;
+        padding: 0 0 10px;
+        width: 100%;
+    }
 }
