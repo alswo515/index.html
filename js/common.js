@@ -25,27 +25,47 @@
     // });
   }
 
-
   //depth1 클릭시 depth2 보이게
   $(".depth1 > .THEMESTYLES").hover(
     function () {
-      if ($('html').hasClass('pc')) {
+      if ($("html").hasClass("pc")) {
         $(this).find(".depth2").stop().slideDown(500);
       }
     },
     function () {
-      if ($('html').hasClass('pc')) {
+      if ($("html").hasClass("pc")) {
         $(this).find(".depth2").stop().slideUp(500);
       }
     }
   );
-  $(".THEMESTYLES").on('click', function () {
-    if ($('html').hasClass('mobile')) {
-      $(this).find('.depth2').stop().slideToggle(500);
+  $(".THEMESTYLES").on("click", function () {
+    if ($("html").hasClass("mobile")) {
+      $(this).find(".depth2").stop().slideToggle(500);
     }
     // return false
-  })
+  });
 
+  //li 메뉴 클릭시 클릭이벤트 없애기
+
+  $(".THEMESTYLES>a").on("click", function (e) {
+    e.preventDefault();
+    if ($("html").hasClass("pc")) {
+      var url = $(this).attr("href");
+      $("#kimContainer").remove();
+      $("#containerBox").load(url);
+    }
+  });
+
+  $(".THEMESTYLES>a").on("click", function (e) {
+    e.preventDefault();
+    var url = $(this).attr("href");
+    $("#kimContainer").remove();
+    $("#containerBox").load(url);
+    if ($("html").hasClass("mobile")) {
+      $(".open_nav").show();
+      $(".close_nav, .depth2, .nav").hide();
+    }
+  });
 
   //윈도우 리사이즈 이벤트 반응형
   init();
@@ -101,7 +121,8 @@
   });
 
   $(".gotop").on("click", function () {
-    $("body, html").stop().animate({
+    $("body, html").stop().animate(
+      {
         scrollTop: 0,
       },
       100,
@@ -151,7 +172,8 @@
           zIndex: "9999999",
         })
         .stop()
-        .animate({
+        .animate(
+          {
             height: "100px",
             opacity: "1",
           },
@@ -167,7 +189,8 @@
           paddingBottom: "100px",
         })
         .stop()
-        .animate({
+        .animate(
+          {
             opacity: "1",
             height: "100px",
             backgroundColor: "rgba(255,255,255,0.9)",
@@ -179,13 +202,15 @@
 
     //scrollTop() 값이 100이사잉 되면 맨위로 버튼보이고 ,100미만이면 숨기기 g
     if (sct >= 100) {
-      $(".gotop").addClass("on").stop().animate({
+      $(".gotop").addClass("on").stop().animate(
+        {
           opacity: "1",
         },
         500
       );
     } else {
-      $(".gotop").removeClass("on").stop().animate({
+      $(".gotop").removeClass("on").stop().animate(
+        {
           opacity: "0",
         },
         500
