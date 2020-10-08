@@ -42,29 +42,6 @@
     if ($("html").hasClass("mobile")) {
       $(this).find(".depth2").stop().slideToggle(500);
     }
-    // return false
-  });
-
-  //li 메뉴 클릭시 클릭이벤트 없애기
-
-  $(".THEMESTYLES>a").on("click", function (e) {
-    e.preventDefault();
-    if ($("html").hasClass("pc")) {
-      var url = $(this).attr("href");
-      $("#kimContainer").remove();
-      $("#containerBox").load(url);
-    }
-  });
-
-  $(".THEMESTYLES>a").on("click", function (e) {
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $("#kimContainer").remove();
-    $("#containerBox").load(url);
-    if ($("html").hasClass("mobile")) {
-      $(".open_nav").show();
-      $(".close_nav, .depth2, .nav").hide();
-    }
   });
 
   //윈도우 리사이즈 이벤트 반응형
@@ -226,6 +203,27 @@
     var url = $(this).attr("href");
     $("#kimContainer").remove();
     $("#containerBox").load(url);
+  });
+
+  //header 구역의 li 메뉴 클릭시 이벤트 없애기
+  $(".THEMESTYLES > a").on("click", function (e) {
+    e.preventDefault();
+    if ($("html").hasClass("pc")) {
+      var url = $(this).attr("href");
+      $("#kimContainer").remove();
+      $("#containerBox").load(url);
+    }
+  });
+
+  $(".THEMESTYLES > a").on("click", function (e) {
+    e.preventDefault();
+    var url = $(this).attr("href");
+    $("#kimContainer").remove();
+    $("#containerBox").load(url);
+    if ($("html").hasClass("mobile")) {
+      $(".open_nav").show();
+      $(".close_nav, .depth2, .nav").hide();
+    }
   });
 
   //푸터구역 사이트맵 로드 메소드
