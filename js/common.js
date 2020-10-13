@@ -25,19 +25,7 @@
     // });
   }
 
-  //depth1 클릭시 depth2 보이게
-  $(".depth1 > li").hover(
-    function () {
-      if ($("html").hasClass("pc")) {
-        $(this).find(".depth2").stop().slideDown(500);
-      }
-    },
-    function () {
-      if ($("html").hasClass("pc")) {
-        $(this).find(".depth2").stop().slideUp(500);
-      }
-    }
-  );
+
 
 
   //윈도우 리사이즈 이벤트 반응형
@@ -70,25 +58,9 @@
     init();
   });
 
-  //햄버거 클릭시 네비박스 나타나기
-  $("#header .open_nav").on("click", function () {
-    $(this).next().stop().slideDown(300);
-    $(this).hide();
-    $(this).nextAll(".close_nav").css({
-      display: "block",
-    });
-  });
-  //닫기버튼 클릭시 네비박스 사라지기
-  $("#header .close_nav").on("click", function () {
-    $(this).prev().stop().slideUp(300);
-    $(this).hide();
-    $(this).prevAll(".open_nav").css({
-      display: "block",
-    });
-    $(".depth2").hide();
-    $(".nav .depth1 > li").removeClass("on");
-  });
 
+
+  //top 버튼 클릭시 스크롤 맨위로 올라가기
   $(".gotop").on("click", function () {
     $("body, html").stop().animate({
         scrollTop: 0,
@@ -165,18 +137,55 @@
   //메인박스 로드메소드
   $("#containerBox").load("main.html");
 
+  //pc화면에서 li a 클릭시 클릭이벤트 막기
+  $(".depth1 > li >a").on('click', function (e) {
+    e.preventDefault()
+  })
 
 
+  //pc 화면에서 depth1 호버시 depth2 보이게
+  $(".depth1 > li").hover(
+    function () {
+      if ($("html").hasClass("pc")) {
+        $(this).find(".depth2").stop().slideDown(500);
+      }
+    },
+    function () {
+      if ($("html").hasClass("pc")) {
+        $(this).find(".depth2").stop().slideUp(500);
+      }
+    }
+  );
 
-  //header 구역의 li 메뉴 클릭시 이벤트 없애기
+  //햄버거 클릭시 네비박스 나타나기
+  $("#header .open_nav").on("click", function () {
+    $(this).next().stop().slideDown(300);
+    $(this).hide();
+    $(this).nextAll(".close_nav").css({
+      display: "block",
+    });
+  });
+
+  //닫기버튼 클릭시 네비박스 사라지기
+  $("#header .close_nav").on("click", function () {
+    $(this).prev().stop().slideUp(300);
+    $(this).hide();
+    $(this).prevAll(".open_nav").css({
+      display: "block",
+    });
+    $(".depth2").hide();
+    $(".nav .depth1 > li").removeClass("on");
+  });
+
+  //mobile 에서 header 구역의 li 메뉴 클릭시 이벤트 없애기
   // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하고,
   // 2단계 메뉴가 없으면 1단계메뉴 페이지 로드시키기
   $(".depth1 > li > a").on("click", function (e) {
     e.preventDefault();
     if ($("html").hasClass("mobile")) {
       if ($(this).next().is(".depth2")) {
-        $(this).nextAll().toggleClass("on");
-        $(this).nextAll().stop().slideToggle(300);
+        $(this).next().toggleClass("on");
+        $(this).next().stop().slideToggle(300);
         $(this).parent().siblings().each(function () {
           if ($(this).find(".depth2").css("display") === "block") {
             $(this).find(".depth2").slideUp(300);
@@ -197,7 +206,7 @@
       $("#containerBox").load(url);
     }
   });
-  //
+  //depth2 > li > a 클릭시 로드 메소드
   $(".depth2 > li > a").on("click", function (e) {
     e.preventDefault()
     var url = $(this).attr("href");
