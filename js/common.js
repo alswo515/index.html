@@ -200,13 +200,13 @@
     $("#containerBox").load(url);
   });
 
-  //header 구역의 li 메뉴 클릭시 이벤트 없애기
 
+  //header 구역의 li 메뉴 클릭시 이벤트 없애기
   // 모바일화면에서 1단계메뉴 클릭했을때 2단계메뉴 보이게 하고,
   // 2단계 메뉴가 없으면 1단계메뉴 페이지 로드시키기
   $(".THEMESTYLES > a").on("click", function (e) {
     e.preventDefault();
-    if ($("html").hasClass("pc")) {
+    if ($("html").hasClass("mobile")) {
       if ($(this).next().is("depth2")) {
         $(this).parent().toggleClass("on");
         $(this).parent().find(".depht2").stop().slideToggle(300);
