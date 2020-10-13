@@ -43,11 +43,7 @@
   //윈도우 리사이즈 이벤트 반응형
   init();
 
-  // if ($(window).width() >= 767) {
-  //   $(".open_nav, .close_nav").css({
-  //     display: "none",
-  //   });
-  // }
+
   var flag = true;
 
   function init() {
@@ -101,27 +97,7 @@
       "linear"
     );
   });
-  // var scollSize = $(document).height() - $(window).height();
-  // var delayBar;
-  // $(window).on("scroll", function () {
-  //   var sct = $(this).scrollTop();
 
-  //   $(".scrolling-bar").css({
-  //     zIndex: 999999999999,
-  //     opacity: "1",
-  //     width: ($(sct).scrollTop() / scollSize) * 100 + "%",
-  //   });
-  //   console.log($("#header").height())
-  //   if (sct >= $("#header").height()) {
-  //     $("#header").animate({
-  //       background: 'rgba(255,255,255,0.9)'
-  //     }, 400, )
-  //   } else {
-  //     $('#header').animate({
-  //       background: 'rgba(255,255,255,1)'
-  //     }, 400, )
-  //   }
-  // });
   //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
   $(window).on("scroll", function () {
     var scollSize =
@@ -189,12 +165,7 @@
   //메인박스 로드메소드
   $("#containerBox").load("main.html");
 
-  // $(".depth1 > li > a").on("click", function (e) {
-  //   e.preventDefault();
-  //   var url = $(this).attr("href");
-  //   $("#kimContainer").remove();
-  //   $("#containerBox").load(url);
-  // });
+
 
 
   //header 구역의 li 메뉴 클릭시 이벤트 없애기
@@ -205,7 +176,7 @@
     if ($("html").hasClass("mobile")) {
       if ($(this).next().is(".depth2")) {
         $(this).parent().toggleClass("on");
-        $(this).parent().find(".depht2").stop().slideToggle(300);
+        $(this).siblings().stop().slideToggle(300);
         $(this).parent().siblings().each(function () {
           if ($(this).find(".depth2").css("display") === "block") {
             $(this).find(".depth2").slideUp(300);
@@ -233,16 +204,7 @@
     $("#kimContainer").remove();
     $("#containerBox").load(url);
   });
-  // $(".THEMESTYLES > a").on("click", function (e) {
-  //   e.preventDefault();
-  //   var url = $(this).attr("href");
-  //   $("#kimContainer").remove();
-  //   $("#containerBox").load(url);
-  //   if ($("html").hasClass("mobile")) {
-  //     $(".open_nav").show();
-  //     $(".close_nav, .depth2, .nav").hide();
-  //   }
-  // });
+
 
   //푸터구역 사이트맵 로드 메소드
   $("#footer .link > a").on("click", function (e) {
@@ -277,19 +239,7 @@
   //서브페이지 스크롤 이벤트
   sct = $(window).scrollTop();
 
-  // var projectLoding = setInterval(project_click, 1000)
-  // var p = 1
-  // $('li.project').on('click',
-  //   function project_click() {
-  //     (function () {
-  //       p--;
-  //       $('.project_1').addClass('on')
-  //       if (k === 0) {
-  //         clearInterval(projectLoding)
-  //         return false
-  //       }
-  //     })
-  //   })
+
 
   $(window).scroll(function () {
     if ($("#kimContainer").children().is("#project_section")) {
