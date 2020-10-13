@@ -175,8 +175,8 @@
     e.preventDefault();
     if ($("html").hasClass("mobile")) {
       if ($(this).next().is(".depth2")) {
-        $(this).parent().toggleClass("on");
-        $(this).siblings().stop().slideToggle(300);
+        $(this).nextAll().toggleClass("on");
+        $(this).nextAll().stop().slideToggle(300);
         $(this).parent().siblings().each(function () {
           if ($(this).find(".depth2").css("display") === "block") {
             $(this).find(".depth2").slideUp(300);
