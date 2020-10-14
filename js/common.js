@@ -60,16 +60,7 @@
 
 
 
-  //top 버튼 클릭시 스크롤 맨위로 올라가기
-  $(".gotop").on("click", function () {
-    $("body, html").stop().animate({
-        scrollTop: 0,
-      },
-      100,
-      "linear"
-    );
-  });
-
+  
   //스크롤 탑값에따라 헤더아래쪽 선의 넓이 변경하기
   $(window).on("scroll", function () {
     var scollSize =
@@ -93,7 +84,7 @@
         })
         .stop()
         .animate({
-            height: "100px",
+            height: "140px",
             opacity: "1",
           },
           500
@@ -105,12 +96,12 @@
           position: "relative",
           height: "0",
           opacity: "0",
-          paddingBottom: "100px",
+          paddingBottom: "140px",
         })
         .stop()
         .animate({
             opacity: "1",
-            height: "100px",
+            height: "140px",
             backgroundColor: "rgba(255,255,255,0.9)",
           },
           500
@@ -132,6 +123,16 @@
         500
       );
     }
+  });
+
+  //top 버튼 클릭시 스크롤 맨위로 올라가기
+  $(".gotop").on("click", function () {
+    $("body, html").stop().animate({
+        scrollTop: 0,
+      },
+      100,
+      "linear"
+    );
   });
 
   //메인박스 로드메소드
