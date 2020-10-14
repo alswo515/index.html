@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+#themestyle_section .article3_tit {
+    color: #7c7c7c;
+    margin: 11.2px 0 28px;
+    font-size: 28px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 100;
+}
+
+.themestyle {
+    margin-bottom: 40px;
+}
+
+/* -------------메인메뉴 이미지 포지션테그들------- */
+.themestyle>.themestyleli {
+    float: left;
+    width: 33.33333%;
+}
+
+.themestyle>.themestyleli>a {
+    height: 504px;
+}
+
+.themestyle img {
+    width: 100%;
+}
+
+
+.themestyle>.themestyleli {
+    padding: 0 17.4129px;
+}
+
+.themestyle .themestyleli {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.article3_tit {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.article3_tit.on {
+    animation: fadeInRight 1s both 0s;
+}
+
+.themestyle {
+    overflow: hidden;
+}
+
+.themestyle.on .themestyleli {
+    animation: fadeInUp 1s both 0s;
+}
+
+.themestyle.on .themestyleli:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.themestyle.on .themestyleli:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.themestyle.on .themestyleli:nth-child(4) {
+    animation-delay: 1.5s;
+}

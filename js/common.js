@@ -138,10 +138,8 @@
   //메인박스 로드메소드
   $("#containerBox").load("main.html");
 
-  //pc화면에서 li a 클릭시 클릭이벤트 막기
-  $(".depth1 > li >a").on('click', function (e) {
-    e.preventDefault()
-  })
+  // pc화면에서 li a 클릭시 클릭이벤트 막기
+  
 
 
   //pc 화면에서 depth1 호버시 depth2 보이게
@@ -201,7 +199,8 @@
         $(".nav, .close_nav").hide();
         $(".depth1 > li").removeClass("on")
       }
-    } else if ($("html").hasClass('pc')) {
+    } 
+    else if ($("html").hasClass('pc')) {
       var url = $(this).attr("href");
       $("#kimContainer").remove();
       $("#containerBox").load(url);
@@ -250,7 +249,7 @@
   sct = $(window).scrollTop();
 
 
-
+//링크이동에따른 스크롤액션 함수호출
   $(window).scroll(function () {
     if ($("#kimContainer").children().is("#project_section")) {
       projectScroll();
@@ -261,6 +260,7 @@
     }
   });
 
+//프로젝트 섹션 부분의 대한 스크롤 액션 함수
   function projectScroll() {
     sct = $(this).scrollTop();
     var project2 = $(".project_2").offset().top - $(this).height() / 2;
@@ -277,6 +277,7 @@
     }
   }
 
+//메인 섹션 부분의 대한 스크롤 액션 함수
   function sectionScroll() {
     sct = $(this).scrollTop();
     var actNear = $(".article2").offset().top - $(this).height() / 2;
