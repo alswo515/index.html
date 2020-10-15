@@ -84,7 +84,7 @@
         })
         .stop()
         .animate({
-            height: "140px",
+            height: "120px",
             opacity: "1",
           },
           500
@@ -96,12 +96,12 @@
           position: "relative",
           height: "0",
           opacity: "0",
-          paddingBottom: "140px",
+          paddingBottom: "120px",
         })
         .stop()
         .animate({
             opacity: "1",
-            height: "140px",
+            height: "120px",
             backgroundColor: "rgba(255,255,255,0.9)",
           },
           500
