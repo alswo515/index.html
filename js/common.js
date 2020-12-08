@@ -253,7 +253,6 @@
   $(window).scroll(function () {
     if ($("#kimContainer").children().is("#project_section")) {
       projectScroll();
-      // $('.project_1').addClass('on')
     }
     if ($("#kimContainer").children().is("#section")) {
       sectionScroll();
